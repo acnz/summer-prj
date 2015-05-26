@@ -1,0 +1,29 @@
+\begin{thebibliography}{}
+
+\bibitem [\protect \citeauthoryear {%
+Need%
+\ \BBA {} Someone%
+}{%
+Need%
+\ \BBA {} Someone%
+}{%
+{\protect \APACyear {2025}}%
+}]{%
+someone}
+\APACinsertmetastar {%
+someone}%
+\begin{APACrefauthors}%
+Need, A.%
+\BCBT {}\ \BBA {} Someone, T\BPBI C.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2025}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Mock article: You need to read more} {Mock article: You
+  need to read more}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Void Theory}{1}{1}{151-1510}.
+\PrintBackRefs{\CurrentBib}
+
+\end{thebibliography}

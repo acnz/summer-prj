@@ -1,0 +1,256 @@
+\documentclass[10pt,a4paper,twoside]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[latin1,utf8]{inputenc}
+
+\usepackage{lmodern}
+
+\usepackage[pdftex]{graphicx} 
+
+\usepackage[tracking=true]{microtype}
+               
+                               
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{xfrac}
+\usepackage{mathrsfs}
+\usepackage{mathtools}
+\usepackage{grffile}  
+
+\usepackage{bbm} %for use of identity-matrix
+\usepackage{dsfont}
+
+\usepackage[]{subfigure}
+\usepackage{wrapfig}
+\usepackage{multicol}
+
+\usepackage{verbatim}
+\usepackage{setspace}
+
+\usepackage{color}
+\usepackage[]{hyperref}
+\usepackage{listings}
+
+\usepackage{accents}
+\usepackage{textcomp}
+\usepackage{multirow}
+\usepackage{booktabs}
+\usepackage{float}
+
+\usepackage[numberedbib]{apacite}
+\bibliographystyle{apacite}
+\usepackage[flushleft]{threeparttable}
+\usepackage{tabulary}
+\usepackage{indentfirst}
+
+
+\usepackage{geometry}
+\geometry{a4paper,left=30mm,right=25mm, top=20mm, bottom=25mm}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{André Crescenzo}
+\lhead{\small{Computer-aided Design of Bio-inspired Nanoporous Silica Materials}}
+\lfoot{\today}
+\rfoot{\thepage}
+
+\usepackage{abstract}
+\usepackage{authblk}
+
+
+
+\title{Computer-aided Design of Bio-inspired Nanoporous Silica Materials}
+\author[1,2]{André Crescenzo\thanks{ Corresponding author.\\ Email: \ \texttt{andre.crescenzo.2014@uni.strath.ac.uk}}}
+\author[1]{Alessia Centi\thanks{ Email: \ \texttt{alessia.centi@strath.ac.uk}}}
+\author[1]{Miguel Jorge\thanks{Email: \ \texttt{miguel.jorge@strath.ac.uk}}}
+\affil[1]{Department of Chemical and Process Engineering, University of Strathclyde}
+\affil[2]{Departamento de Engenharia Química da Escola Politécnica, Universidade de São Paulo}
+\renewcommand\Authands{ and }
+\date{\today \\
+\begin{abstract}
+\textbf{Aim:} Finish my job!\\
+\textbf{Conclusion:}Repeating the results is not drawing a conclusion.
+\begin{tabular}
+& \textbf{Keywords}: Latex$\cdot$ Bibtex  $\cdot$ Scientific Paper $\cdot$ More Scientific Papers $\cdot$ More Scientific Papers  $\cdot$ More Scientific Papers $\cdot$ More Scientific Papers $\cdot$ More Scientific Papers $\cdot$ More Scientific Papers 
+\end{tabular}
+\end{abstract}}
+
+\pagenumbering{roman}
+
+\begin{document}
+%\doublespace
+\begin{titlepage}
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}} 
+
+\center 
+ 
+\begin{figure*}[ht!]
+	\includegraphics[width=1 \textwidth]{./images/StrathLogo}
+\end{figure*}
+
+
+\textsc{\LARGE University of Strathclyde}\\[1.5cm] 
+\textsc{\Large Department of Chemical \& Process Engineering}\\[0.5cm] 
+\textsc{\large M.Eng Chemical \& Process Engineering 18530}\\[0.5cm] 
+
+
+\HRule \\[0.4cm]
+{ \huge \bfseries Computer-aided Design of Bio-inspired Nanoporous Silica Materials}\\[0.4cm] % Title of your document
+\HRule \\[1.5cm]
+ 
+
+\begin{minipage}{0.4\textwidth}
+\begin{flushleft} \large
+\emph{Author:}\\
+André \textsc{Crescenzo} 
+\end{flushleft}
+\end{minipage}
+~
+\begin{minipage}{0.4\textwidth}
+\begin{flushright} \large
+\emph{Supervisors:} \\
+Miguel \textsc{Jorge} \\ 
+Alessia \textsc{Centi} \\
+Carlos F. \textsc{Rangel}
+\end{flushright}
+\end{minipage}\\[4cm]
+
+{\large \today}\\[3cm] % Date, change the \today to a set date if you want to be precise
+
+
+\vfill 
+
+\end{titlepage}
+\addtocontents{toc}{~\hfill\textbf{Page}\par}
+\section{Summary}
+\setcounter{page}{1}
+...
+\vfill
+\newpage
+
+\setcounter{tocdepth}{3}
+\tableofcontents
+
+
+
+\vfill
+\newpage
+
+\section{Acknowledgements}
+
+\textit{...}
+
+\vfill
+\newpage
+
+\pagenumbering{arabic}
+\section{Introduction}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%A good introduction is a clear statement of the problem or project and the reasons for studying it. 
+%This information should be contained in the first few sentences.										
+%Give a concise and appropriate background discussion of the problem									
+%and the significance, scope, and limits of the work. Outline what has been done						
+%before by citing truly pertinent literature, but do not include a general survey of					
+%semirelevant literature. State how your work differs from or is related to work						
+%previously published. Demonstrate the continuity from the previous work to yours.					
+%The introduction can be one or two paragraphs long. Often, the heading								
+%“Introduction” is not used because it is superfluous; opening paragraphs are usually introductory	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%clear statement of the problem + reasons for studying it\\
+%  background discussion\\
+%  what has been done by others(cite works)\\
+%  how mine differs from the others\\
+%  how it relates to the others\\
+%  significance of the work\\
+%  scope of the work\\
+%  limts of the work\\
+%  continuity?(maybe silica interactions...)\\
+
+"Hello World" \cite{someone}
+\section{Theoretical Basis}
+\section{Methods Description} 
+\section{Results and Discussion}
+\section{Conclusion} 
+\section{Nomenclature} 
+   \begin{tabulary}{1.0\textwidth}{LCL}
+   $k_B$ & & Boltzmann's Constant\\
+   $C_n$ &   & Molar concentration of species n ($mM$) \\
+   \end{tabulary}
+
+\bibliography{./biblio/biblio}
+\vfill
+\newpage
+\section{Appendix}
+\label{sec:appendix}
+\setcounter{page}{1}
+%\begin{equation}
+%E_c=\frac{1}{2}mv^2
+%\label{eqn:bua}
+%\end{equation}
+%
+%\begin{table*}[ht!] 
+%  \centering
+%\begin{threeparttable}
+%
+%  \caption{Table generated by Excel2LaTeX from sheet 'Sheet1'}
+%
+%    \begin{tabular}{rrrrrr}
+%    \toprule
+%    Model & Depth & Width & Angle & Factor 1 & Factor 2 \\
+%	& (mm) & (mm) & (°)  &  &  \\
+%    \midrule
+%    111   & 1,00  & 1,50  & 10\tnote{a}   & 357.921 & 532.289 \\
+%    112   & 1,00  & 1,50  & 15   & 382.379 & 567.234 \\
+%    113   & 1,00  & 1,50  & 20   & 383.863 & 569.600 \\
+%    121   & 1,00  & 2,00  & 10   & 398.199 & 590.473 \\
+%    122   & 1,00  & 2,00  & 15   & 486.306 & 710.483 \\
+%    123   & 1,00  & 2,00  & 20   & 430.330 & 636.471 \\
+%    131   & 1,00  & 2,50  & 10   & 441.735 & 654.499 \\
+%    132   & 1,00  & 2,50  & 15   & 460.925 & 681.645 \\
+%    133   & 1,00  & 2,50  & 20   & 469.115 & 693.700 \\
+%    211   & 1,25  & 1,50  & 10   & 374.784 & 557.029 \\
+%    212   & 1,25  & 1,50  & 15   & 399.053\tnote{b} & 591.402 \\
+%    213   & 1,25  & 1,50  & 20   & 411.377 & 609.042 \\
+%    221   & 1,25  & 2,00  & 10   & 415.050 & 615.336 \\
+%    222   & 1,25  & 2,00  & 15   & 430.991 & 638.237 \\
+%    223   & 1,25  & 2,00  & 20   & 455.857 & 673.613 \\
+%    231   & 1,25  & 2,50  & 10   & 472.885 & 698.958 \\
+%    232   & 1,25  & 2,50  & 15   & 484.567 & 715.341 \\
+%    233   & 1,25  & 2,50  & 20  & 497.320 & 733.923 \\
+%    311   & 1,50  & 1,50  & 10   & 385.110 & 572.665 \\
+%    312   & 1,50  & 1,50  & 15   & 406.144 & 602.130 \\
+%    313   & 1,50  & 1,50  & 20   & 480.613 & 706.960 \\
+%    321   & 1,50  & 2,00  & 10   & 490.910 & 722.194 \\
+%    322   & 1,50  & 2,00  & 15   & 513.846 & 754.804 \\
+%    323   & 1,50  & 2,00  & 20   & 529.291 & 777.175 \\
+%    331   & 1,50  & 2,50  & 10   & 542.184 & 796.618 \\
+%    332   & 1,50  & 2,50  & 15   & 510.958 & 753.298 \\
+%    333   & 1,50  & 2,50  & 20   & 527.253 & 776.981 \\
+%         \midrule
+%          &       &       & Sum: & 12.138.966 & 17.932.100 \\
+%    \bottomrule
+%    \end{tabular}%
+%    \begin{tablenotes}
+%    	\item[a] This should be cited with a \citeA{magic}
+%    	\item[b] And this is another note
+%    \end{tablenotes}
+%  \label{tab:addlabel}%
+%\end{threeparttable} 
+%\end{table*}
+%
+%\begin{figure}[ht!]
+%  \begin{center}
+%	\includegraphics[width=0.3 \textwidth]{./images/wip}
+%	\caption{Work in Progress}
+%	\label{Fig:Boxplot}
+%  \end{center}
+%\end{figure}
+%
+%\textbf{Model 1 description files}
+%
+%\textbf{CGTraj input:}
+%\begin{lstlisting}[frame=single]
+% &TRAJ
+%\end{lstlisting}
+\end{document}
