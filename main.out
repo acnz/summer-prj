@@ -2,9 +2,15 @@
 \BOOKMARK [1][-]{section.2}{Acknowledgements}{}% 2
 \BOOKMARK [1][-]{section.3}{Introduction}{}% 3
 \BOOKMARK [1][-]{section.4}{Theoretical Basis}{}% 4
-\BOOKMARK [1][-]{section.5}{Methods Description}{}% 5
-\BOOKMARK [1][-]{section.6}{Results and Discussion}{}% 6
-\BOOKMARK [1][-]{section.7}{Conclusion}{}% 7
-\BOOKMARK [1][-]{section.8}{Nomenclature}{}% 8
-\BOOKMARK [1][-]{section.9}{References}{}% 9
-\BOOKMARK [1][-]{section.10}{Appendix}{}% 10
+\BOOKMARK [2][-]{subsection.4.1}{Simulation Methods}{section.4}% 5
+\BOOKMARK [3][-]{subsubsection.4.1.1}{Molecular Dynamics simulation}{subsection.4.1}% 6
+\BOOKMARK [3][-]{subsubsection.4.1.2}{Monte Carlo simulation}{subsection.4.1}% 7
+\BOOKMARK [2][-]{subsection.4.2}{Software Description}{section.4}% 8
+\BOOKMARK [3][-]{subsubsection.4.2.1}{About GROMACS}{subsection.4.2}% 9
+\BOOKMARK [3][-]{subsubsection.4.2.2}{About MagiC}{subsection.4.2}% 10
+\BOOKMARK [1][-]{section.5}{Methods Description}{}% 11
+\BOOKMARK [1][-]{section.6}{Results and Discussion}{}% 12
+\BOOKMARK [1][-]{section.7}{Conclusion}{}% 13
+\BOOKMARK [1][-]{section.8}{Nomenclature}{}% 14
+\BOOKMARK [1][-]{section.9}{References}{}% 15
+\BOOKMARK [1][-]{section.10}{Appendix}{}% 16

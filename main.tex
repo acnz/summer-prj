@@ -178,16 +178,191 @@ On the other hand, a major concern is that even though MD uses sophisticated sof
 %  how it relates to the others\\
 In order to provide molecular topologies to simulations software packages several force-fields, for example MARTINI \cite{martini}, uses Lennard-Jones potentials fitted to a range of pre-defined bead types to describe coarse-grain models. Furthermore, not only intramolecular beads are possible, but also intermolecular beads can be specified, such as multiple solvent molecules merged in a single bead or ions surround by water molecules. Previous works conducted by \cite{mjsilica} with this method recreated a model of surfactant in the presence of silica with explicit water that was successful in describing rod-like self-assembly structures detected on MCM-41 materials, demonstrating the capacities of up-scaling this type of systems. Nevertheless, solvent presence demands most of the computational resources, hence  implicit solvent scheme has been the focus of many studies \cite{gromacs}.
 
-Different concepts have been applied to develop a suitable model for implicit solvents; For example, \citeA{drymartini} developed the Dry MARTINI force-field by modifying parameters of its predecessor, in such manner that solvent interactions became incorporated in these values and then solvent beads are no longer necessary. Another method, described by \citeA{magic} is able to recreate an implicit solvent system from interaction potentials generated from a bottom-up approach, that means by using an all-atoms simulation to generate parameters for the coarse-grain model. It is supposed  that thermodynamic changes on the system, originated from solvent interaction with amphiphilic molecules, are incorporated in these approximated potentials. Therefore, changes in parameters as concentration may not affect coarse-grained model performance in recreating self-assembly structures \cite{dmpc}.
+Different concepts have been applied to develop a suitable model for implicit solvents; For example, \citeA{drymartini} developed the Dry MARTINI force-field by modifying parameters of its predecessor, in such manner that solvent interactions became incorporated in these values and then solvent beads are no longer necessary. Another method, described by \citeA{magic} is able to recreate an implicit solvent system from interaction potentials generated from a bottom-up approach, that means by using an all-atoms simulation to generate parameters for the coarse-grain model. It is supposed  that these approximated potentials can be refined iteratively by this systematic method based on averages calculated from Monte Carlo simulations. 
+During this process thermodynamic changes originated from solvent interaction with amphiphilic molecules or even electrostatic interactions can be incorporated in the potentials derived, therefore providing a flexible methodology to up-scale systems allowing the simulation of mesoscale self-assembly structures using coarse-graining.
 
 %  significance of the work\\
 %  scope of the work\\
 %  limts of the work\\
-The work presented in the following experiments is an attempt to create a flexible method to upscale silica-surfactant interactions \cite{silica1} from the atomistic model to a mesoscale model with the advent of this later coarse-grain technique. The methodology applied to reach the desired model is based on the MagiC software package \cite{magic} that in conjunction with a MD simulation software, in this case GROMACS \cite{gromacs}, will provide a suitable approximation to self-assembly of amphiphilic molecules. Further explanations of the process are described in the Experimental Methods section. For the scope of this project, a bolaamphiphilic molecule called 1,12-diaminododecane (DMDD) has been chosen as surfactant because, as seen in previous research by \citeA{msuv}, it self-assembles in multilamelar vesicles that in the presence of a silica precursor are capable of generating a mesoporous structure with remarkable properties. In order to validate this structure formation and framework formation for silica oligomers, a coarse-grain approximation is a suitable option since amphiphilic molecules interaction with solvents can be described efficiently with tabulated Lennard-Jones potential interactions. As a final objective at the end of this project, an implicit water coarse-grain model for DMDD will be generated and properly validated based on MD simulations and thermodynamic properties, in order to provide a satisfactory approximation to interactions with silica oligomers in a mesoscale model. 
+The experiments presented in this work are an attempt to develop a  method to upscale silica-surfactant interactions \cite{silica1} from the atomistic model to a mesoscale model with the advent of this later coarse-grain technique. The methodology applied to reach the desired model is based on the MagiC software package \cite{magic} that in conjunction with a MD simulation software, in this case GROMACS \cite{gromacs}, will provide a suitable approximation to self-assembly of amphiphilic molecules. Further explanations of the process are described in the Experimental Methods section. For the scope of this project, a bolaamphiphilic molecule called 1,12-diaminododecane (DMDD) has been chosen as surfactant because, as seen in previous research by \citeA{msuv}, it self-assembles in multilamelar vesicles that in the presence of a silica precursor are capable of generating a mesoporous structure with remarkable properties. In order to validate this structure formation and framework formation for silica oligomers, a coarse-grain approximation is a suitable option since amphiphilic molecules interaction with solvents can be described efficiently with potentials derived from the chosen methodology \cite{myproj}. As a final objective at the end of this project, an implicit water coarse-grain model for DMDD and Silica will be generated and properly validated based on MD simulations and thermodynamic properties, in order to provide a satisfactory approximation of self-assembled silica-surfactant structures in mesoscale. 
 %  continuity?(maybe silica interactions...)\\
 
 
 \section{Theoretical Basis}
+This work is based on two molecular simulation techniques. The former, called Molecular Dynamics, accounts for integration of Newton forces in order to describe positions and velocities of particles in the system. The latter, called Monte Carlo method, is a powerful statistical tool based on stochastic inputs to measure properties from many systems, in this case molecular systems in thermodynamic equilibrium. In the following sections the mechanism behind each technique will be described, including additional explanations on how they are applied in simulation software.
+\subsection{Simulation Methods}
+\subsubsection{Molecular Dynamics simulation}
+
+Molecular Dynamics is a simulation method that originates from the dynamic nature of atomic interactions. Generally, a system of atoms can be treated as a multi-particle system ruled by Newton's Law \cite{umd}. Considering a system with $\mathcal{N}$ atoms, for each $i$th particle of the system the following differential equation will determine its dynamic behaviour:
+\begin{equation}
+m_i\dfrac{\,d^2\vec{r}_i(t)}{\,dt^2} = \vec{F}_i(t)
+\label{eqn:newton}
+\end{equation}
+
+Where $\vec{r} = (x,y,z)$ is the position vector and $F = (F_x, F_y, F_z)$ are the force components. Therefore, for this $\mathcal{N}$ particle system, it is necessary to solve $3\mathcal{N}$ differential equations in order to fully describe it analytically at any $t$. Since any molecular system involves an enormous number of molecules, solving these equations analytically is impracticable and simulation methods are necessary. The derivative terms need to be numerically calculated and as soon as simulation efficiency is a major concern, a suitable approximation to the second derivative of position is the Taylor's expansion, taking the x coordinate as an example, for a given $\Delta t$ is:
+\begin{equation}
+x(t+\Delta t) = x(t) + \Delta t \dfrac{\,dx(t)}{\,dt} + \dfrac{1}{2!}{\Delta t}^2 \dfrac{\,d^2x(t)}{\,dt^2} + \dfrac{1}{3!}{\Delta t}^3 \dfrac{\,d^3x(t)}{\,dt^3} +  \mathcal{O}(\Delta t^4)
+\label{eqn:taylor1}
+\end{equation}
+\begin{equation}
+x(t-\Delta t) = x(t) - \Delta t \dfrac{\,dx(t)}{\,dt} + \dfrac{1}{2!}{\Delta t}^2 \dfrac{\,d^2x(t)}{\,dt^2} - \dfrac{1}{3!}{\Delta t}^3 \dfrac{\,d^3x(t)}{\,dt^3} +  \mathcal{O}(\Delta t^4)
+\label{eqn:taylor2}
+\end{equation}
+\begin{equation}
+\dfrac{\,d^2x(t)}{\,dt^2} = \dfrac{x(t+\Delta t) - 2 x(t) + x(t-\Delta t)}{{\Delta t}^2} +  \mathcal{O}(\Delta t^2)
+\label{eqn:dx2}
+\end{equation}
+
+Hence, by neglecting the error of order $\mathcal{O}(\Delta t^2)$, it is possible to use equations (\ref{eqn:newton}) and (\ref{eqn:dx2}) to derive the called "Verlet method" where position and velocity vectors for each $i$th atom on next step ($t+\Delta t$) are calculated using previous and current step:
+\begin{equation}
+\vec{r}_i(t+\Delta t) = 2 \vec{r}_i(t) - \vec{r}_i(t-\Delta t) + \dfrac{{\Delta t}^2}{m_i}\vec{F}_i(t)
+\label{eqn:verletr}
+\end{equation}
+\begin{equation}
+\vec{v}_i(t) =  \dfrac{\vec{r}_i(t+\Delta t) - \vec{r}_i(t-\Delta t)}{2{\Delta t}}
+\label{eqn:verletv}
+\end{equation}
+
+In order to improve accuracy of the Verlet method, another approach can be made by accounting for a new force term in the velocity. This term is calculated from the updated position vector, and this improved velocity term is used to calculate the new position in the next step, creating a more precise step cycle with more stability \cite{satoh}. This set of equations is called "Velocity Verlet method" and it is described as:
+\begin{equation}
+\vec{r}_i(t+\Delta t) = \vec{r}_i(t) + \vec{v}_i(t)\Delta t + \dfrac{\vec{F}_i(t)}{2m_i}{\Delta t}^2
+\label{eqn:vverletr}
+\end{equation}
+\begin{equation}
+\vec{v}_i(t+\Delta t) = \vec{v}_i(t) + \dfrac{\vec{F}_i(t+\Delta t)+\vec{F}_i(t)}{2m_i}\Delta t
+\label{eqn:vverletv}
+\end{equation}
+
+As a final variation for Verlet method one can derive the "Leap frog method", in which one considers half-step when calculating the velocity term. Even though the use of this technique leads to a more stable and accurate behaviour when compared to Verlet method, it is noticeable that velocity and position are not in the same time steps, therefore it is not possible to calculate the total energy at a given $t$, just kinetic or potential energy separately \cite{umd}. By applying first-order derivatives with half-steps, one can obtain the following equations:
+\begin{equation}
+\vec{r}_i(t+\Delta t) = \vec{r}_i(t) + \vec{v}_i(t+\sfrac{\Delta t}{2})\Delta t
+\label{eqn:leapfrogr}
+\end{equation}
+\begin{equation}
+\vec{v}_i(t+\sfrac{\Delta t}{2}) = \vec{v}_i(t-\sfrac{\Delta t}{2}) + \dfrac{\vec{F}_i(t)}{m_i}\Delta t
+\label{eqn:leapfrogv}
+\end{equation}
+
+The force term for each step is a key factor to define whether Molecular Dynamics are realistic or not. They are strictly related to the force-field adopted to describe molecular interactions, since they provide parameters to specify intra and intermolecular potentials from which forces can be calculated at any system configuration. Eventually, as seen in innovative methods such as the used on this project, the potential values can also be provided by tables generated specifically for each molecular interaction, explanations about this technique will be given on further sections (See Section \ref{subsubsec:magic}). Molecular dynamics technique enables the use of thermostats and barostats to control dynamic behaviour of temperature and pressure of the system, recreating different types of thermodynamic ensemble. Hence, at equilibrated states, system properties can be obtained as a temporal average of instantaneous values and those averages can be compared to real experimental data in order to validate simulations.
+
+\subsubsection{Monte Carlo simulation}
+Monte Carlo is  a simulation method based on the statistical probability of existence of a system at thermodynamic equilibrium. The equilibrium condition happens when the free energy reaches a minimum by calculating the energy for each particle's microscopic state. Given a system of $ \mathcal{N}$ particles, temperature $T$ and volume $V$ (thus it can be denoted as a canonical ensemble), it is possible to assume that  the Helmholtz free energy of this system is:
+\begin{equation}
+A = U - TS
+\label{eqn:freeE}
+\end{equation}
+where $S$ is the entropy and $U$ is the internal energy, meaning that not only a minimum in free energy can arise from a minimum in total energy, but also an increase in entropy of the system can contribute to this energy minimization. A system can be described by a group of coordinates, in this case for clarity, a group of distance vectors $\lambda = (	\vec{r}_1,\vec{r}_2, \ldots, \vec{r}_\mathcal{N} )$ from system origin. For an arbitrary $\lambda$ the probability of a single particle of the system to statistically occupy that position is described by a probability distribution function \cite{satoh}:
+\begin{equation}
+\rho(\lambda) = \dfrac{\exp{\left(-\dfrac{U(\lambda)}{kT}\right)}}{\displaystyle \int_V \dots   \int_V \exp{\left(-\dfrac{U(\lambda)}{kT}\right)}\,d\vec{r}_1 \,d\vec{r}_2 \ldots \,d\vec{r}_\mathcal{N} }
+\label{eqn:rho}
+\end{equation}
+
+If the system configuration is generated with a considerable number of microstates that satisfies this probability, then the final configuration will have a real physical meaning. But, as soon as it is almost impossible to define an analytical solution to this equation when $\mathcal{N}$ is too large, another method became necessary to use Monte Carlo simulations in molecular dynamics. The Metropolis method \cite{metropolis} allowed the use of Monte Carlo technique by introducing the following concept: given 2 different microstates, the probability to change from state 1 to 2 is defined by:
+
+\begin{equation}
+ P_{1\mapsto2} = \left\{
+\begin{array}{c l}     
+    1 & for \ \frac{\rho(\lambda_2)}{\rho(\lambda_1)}\geqslant1\\
+    \dfrac{\rho(\lambda_2)}{\rho(\lambda_1)} & for \ \frac{\rho(\lambda_2)}{\rho(\lambda_1)}<1
+\end{array}\right.
+\label{eqn:metrop}
+\end{equation}
+
+ Therefore, the integral term in eq.(\ref{eqn:rho}) vanishes and it is clear to observe that when $U(\lambda_1) \geqslant U(\lambda_2)$ the system will certainly change to this new microstate since it has lower energy, however in the case of $U(\lambda_1) < U(\lambda_2)$ the system has a certain probability of changing to this new microstate indicating an increase of entropy in the system. So, by applying stochastic inputs for particle displacements and acceptance values for eq.(\ref{eqn:metrop}), with a large number of Monte Carlo steps the system will eventually reach a minimum in free energy.
+  Moreover, when this system reaches equilibrium it is possible to calculate accurately microstate dependent properties via ensemble averages. That means with $n$ samples of Monte Carlo steps, the average of a $ \xi $ property can be obtained by:
+ 
+ \begin{equation}
+\left\langle \xi\right\rangle  = \displaystyle \sum_{i=1}^{n} \dfrac{\xi_i}{n}
+\label{eqn:average}
+\end{equation}
+
+It is important to notice that Monte Carlo simulations do not consider dynamic properties of the system such as kinetic energy, and therefore only Molecular Dynamics can account for such things \cite{satoh}. Finally, now that both molecular simulation methods have been introduced it is possible to proceed to an overview of both simulation software used on this project. Together they can unite the benefits of both simulation methods, in order to recreate a suitable coarse-grain model for Molecular Dynamics.
+\subsection{Software Description}
+\subsubsection{About GROMACS}
+
+ GROMACS (\textbf{Gro}ningen \textbf{Ma}chine for \textbf{C}hemical \textbf{S}imulations) \cite{gromanual} is a Molecular Dynamics and energy minimization software created at the University of Groningen (the Netherlands), and currently has been developed and updated by Royal Institute of Technology (Sweden) and Uppsala University (Sweden). GROMACS is a widely used tool in the branch of computational chemistry because it is flexible and efficient. Its flexibility comes from the capacity of simulating multiscale molecular models, from atomistic to mesoscale depending on topology described by the user. The efficiency originates from the computational optimisation, by this meaning not only that GROMACS can achieve impressive simulation speed in large systems using supercomputing or clusters, but also it can run small simulations in any ordinary computer with great performance.
+ 
+ In order to interpret interatomic interactions, that means forces between each pair of atoms, GROMACS uses input files called Topologies in which the user can describe almost any molecule using force fields or tabulated potentials. Data given in this description includes information regarding atoms' type, mass and charge. Moreover, it includes a detailed description of each bond, angle and dihedral for the molecule. There are several Force-fields available for usage depending on the desired objective of the simulation, their role is to be a database that describes interaction potentials. Hence their applicability is suitable to almost any system from all-atoms to coarse-grain descriptions, but it is entitled to the user to choose the most appropriate to obtain a realistic model.
+ 
+  When dealing with simulations of complex systems, realism means more computational power expended trying to achieve it \cite{satoh}, therefore a major concern is how to achieve longer time horizons without loosing precision. A good example is the Lennard-Jones potential for Van der Waals forces, used by OPLS-AA Force-field \cite{opls}, which is the one chosen for all-atom simulations in this project. This type of potential approximation for a given atom $i$ in relation to atom $j$ is defined simply by two parameters  $\epsilon$ and $\sigma$ as it can be seen in Eq.\ref{eqn:ljpot}:
+
+\begin{equation}
+\mathcal{U}_{LJ}(r_{ij}) = 4\epsilon_{ij}\left(\left( \dfrac{\sigma_{ij}}{r_{ij}}\right)^{12} - \left( \dfrac{\sigma_{ij}}{r_{ij}}\right)^6\right) 
+\label{eqn:ljpot}
+\end{equation}
+
+ \begin{figure}[ht]
+  \begin{center}
+	\includegraphics[width=0.6 \textwidth]{./graphs/lj}
+	\caption{Example of Lennard-Jones Potential (with reduced units). For this plot $\epsilon = 1$ and $\sigma = 1$ }
+	\label{gfx:ljg}
+	\end{center}
+	\end{figure}
+
+Where the forces used in Molecular Dynamics equations come from the gradient of this potential for each pair of particles:
+\begin{equation}
+\vec{F}_{ij} = \nabla\mathcal{U}_{LJ}(r_{ij}) = \left( \dfrac{\partial\mathcal{U}_{LJ}(r_{ij})}{\partial x}\hat{x} + \dfrac{\partial\mathcal{U}_{LJ}(r_{ij})}{\partial y}\hat{y}+\dfrac{\partial\mathcal{U}_{LJ}(r_{ij})}{\partial z}\hat{z}\right) 
+\label{eqn:ljf}
+\end{equation}
+
+For every simulation time-step, GROMACS recalculates bonded potentials from topology, non-bonded potentials from the summation of Lennard-Jones potentials and Coulomb potentials. As shown in Figure (\ref{gfx:ljg}) if $r_{ij} \rightarrow \infty$ $\Rightarrow$ $\mathcal{U}_{LJ} \rightarrow 0$ and a similar behaviour occurs for Coulomb forces. Hence, GROMACS generates a neighbour list of atoms determined by a cut-off radius for each particle, by this means avoiding having to spend a lot of computational power calculating numbers with negligible value. Moreover, this feature allows the use of periodic boundary conditions that recreate a continuous media environment for simulation boxes bigger than  two times the cut-off radius, since each particle cannot interact with itself. 
+
+Although speed efficiency is a concern, it is not the only preoccupation. In fact, it is also necessary to control environment variables such as temperature and pressure, in order to maintain the simulation within physical limits, which demands computational resources. GROMACS is capable of using three types of thermostat: Berendsen, v-rescaling and Nosé-Hoover and three types of barostat: Berendsen, Parrinello-Rahman and MTTK \cite{gromanual}. Furthermore, other computational expensive technique is the use of Particle-mesh Ewald (PME) summation method \cite{ewald} to deal with long-range electrostatic interactions, which is indispensable in ionic environments. All these tools makes GROMACS not only fast but also reliable for Molecular Dynamics simulation, moreover this project will as well demonstrate the capacity of this software to simulate realistic multi-scale molecular models.
+  
+\subsubsection{About MagiC}
+\label{subsubsec:magic}
+MagiC is a software package developed by \citeA{magic}, which is a systematic method to generate coarse-grain models from all-atomic simulations using Iterative Boltzmann Inversion (IBI) and Inverse Monte Carlo (IMC). As described in Figure (\ref{Fig:magic}), this method consists of a three step process where the input is the trajectory file of an equilibrated all-atoms simulation from GROMACS, and outputs are a set of tabulated potentials and a Topology for a coarse-grained model that uses these potentials to run Molecular Dynamics simulations using GROMACS. 
+ \begin{figure}[ht]
+  \begin{center}
+	\includegraphics[width=1 \textwidth]{./images/magic}
+	\caption{Graphical representation of Magic's systematic process. The central circle represent the process itself while the other two are input and output. The green boxes indicates each step inside MagiC process. }
+	\label{Fig:magic}
+	\end{center}
+	\end{figure}
+
+ The first step uses "CGtraj 1.3" (MagiC package utility written in Fortran 90) \cite{magicmanu}, where the trajectory of the all-atoms simulation is recalculated based on a bead mapping described by the user. Basically, it analyses the group of atoms in each bead and assigns the position of this bead as the center of mass, charge as summation of all charges and mass as summation of atomic masses, thus giving as output a representation of the input system as if it was an "ideal" coarse-grain model. Next, this rewritten trajectory is used as input to rdf-2.0  (MagiC package utility written in Python) \cite{magicmanu}, where several reference Radial Distributions Functions are created for each bond, angle and pairwise intermolecular interaction, as specified by the user. These reference RDFs in conjunction with the coarse-grain topology are the  inputs to the MagiC kernel (MagiC package utility written in Fortran 90) \cite{magicmanu}, which is the key step of the process, where the final output might be a suitable coarse-grain model ready for GROMACS simulation.
+ 
+ The kernel is where the actual Inversion process occurs, as schematised in Figure (\ref{Fig:kernel}). Whether using IMC or IBI, a couple of millions of Metropolis Monte Carlo steps are simulated using a set of trial potentials to create several samples of averaged thermodynamics properties. Then, these averages are applied in the equations of the chosen inversion method in order to refine the trial potentials that will be used in the next inversion step.
+ \begin{figure}[ht!]
+  \begin{center}
+	\includegraphics[width=0.50\textwidth]{./images/magiccore}
+	\caption{MagiC kernel work-flow scheme}
+	\label{Fig:kernel}
+  \end{center}
+\end{figure}
+ 
+ The Iterative Boltzmann Inversion is a reasonable methodology to apply in the initial iterations, since it has fast convergence. The process derives from probability distribution function (Eq.(12)), thus for a pairwise particle interaction, the relationship between the reference RDF and Potential Mean Force (PMF) enables the use of an iterative method shown in Eq.(17) \cite{ibi}:
+   \begin{equation}
+\mathcal{U}^{(i+1)}(r) = \mathcal{U}^{(i)}(r) - \eta k_B T \ln{\left(\dfrac{\rho^{(i)}(r)}{\rho_{ref}(r)}\right)}
+\label{eqn:ibi}
+\end{equation}
+
+ Where $\eta$ is a regularization parameter to avoid excessive variations. For a system in a canonical ensemble, temperature will be constant, hence the potential is corrected for each iteration using the $\rho_{ref}(r)$ calculated from reference RDF in comparison to $\rho^{(i)}(r)$ from  RDF generated by Metropolis Monte Carlo simulation. Although this method is efficient to achieve small deviations from references, it does not guarantee that the generated potential represents one that will reproduce a behaviour similar to atomistic model because IBI does not consider cross-correlation terms between bonds and angles \cite{magic}.   
+ 
+ Regarding the Inverse Monte Carlo process, it follows the methodology described by \citeA{imc}. Given a Hamiltonian, that means the total energy of the system:
+ \begin{equation}
+\mathcal{H}(q) = \displaystyle \int \mathcal{U}_\alpha\mathcal{S}_\alpha(q) \,d\alpha
+\label{eqn:hami}
+\end{equation}
+
+For pair interactions, the degree of freedom $q$ in Eq.(\ref{eqn:hami}) becomes the distance $r$ between a pair of atoms. Therefore, for a real system the Hamiltonian would be the summation of an infinite set of $\mathcal{U}_\alpha$. However, a good approximation for numerical methods is to assume a cut-off radius $r_{\mathsf{cut}}$, where potentials no longer have relevant value after this point. One can define a $\Delta r = \dfrac{r_{\mathsf{cut}}}{\mathcal{M}}$, obtaining $\mathcal{M}$ subdivisions and thus a finite set of  $\mathcal{U}_{\alpha}$ in which $\mathcal{S}_\alpha$ is the number of pairs within  interval $[r_\alpha,(r_\alpha + \Delta r)]$. Since $\mathcal{S}_\alpha$ is function of $\mathcal{U}$, one can derive the following Taylor expansion:
+
+ \begin{equation}
+\Delta\left\langle\mathcal{S}_\alpha\right\rangle = \sum_{\phi=\alpha}^\mathcal{M}\dfrac{\partial\left\langle\mathcal{S}_\alpha\right\rangle}{\partial\mathcal{U}_\phi}\Delta\mathcal{U}_\phi + \mathcal{O}({\Delta\mathcal{U}_\phi}^2)
+\label{eqn:inv1}
+\end{equation}
+ \begin{equation}
+\dfrac{\partial\left\langle\mathcal{S}_\alpha\right\rangle}{\partial\mathcal{U}_\phi} = \dfrac{ \left\langle\mathcal{S}_\alpha\right\rangle\left\langle\mathcal{S}_\phi\right\rangle - \left\langle\mathcal{S}_\alpha\mathcal{S}_\phi\right\rangle}{k_B T}
+\label{eqn:inv2}
+\end{equation}
+
+For each inversion step $k$, Monte Carlo simulations are run using a set of potentials $\mathcal{U}_{\alpha}^{(k)}$, then as explained previously it is possible to calculate ensemble averages of the cross-correlation terms ${\left\langle\mathcal{S}_\alpha\mathcal{S}_\phi\right\rangle}^{(k)}$ and averages $\left\langle\mathcal{S}_\alpha\right\rangle^{(k)}$, $\left\langle\mathcal{S}_\phi\right\rangle^{(k)}$. At this point, the reference RDFs become useful for inverse Monte Carlo. Since this method deals with pairwise interactions the values of $\mathcal{S}_\alpha$ and $\rho(r)$ are directly proportional following the rule $\mathcal{S}_\alpha^{*}= \rho(r_\alpha)\Delta r $ \cite{magic} because both measure the quantity of one type of coarse-grain bead in relation to another. Hence, by using $\Delta\left\langle\mathcal{S}_\alpha\right\rangle = \left\langle\mathcal{S}_\alpha\right\rangle^{(k)} - \mathcal{S}_\alpha^{*}$  in conjunction with Eq.(\ref{eqn:inv1}) and Eq.(\ref{eqn:inv2}) and neglecting the error $\mathcal{O}({\Delta\mathcal{U}}^2)$ the potential correction for next step $\Delta\mathcal{U}_\alpha^{(k)}$ can be obtained and finally potentials are updated using the following  equation:
+ \begin{equation}
+\mathcal{U}_\alpha^{(k+1)}= \mathcal{U}_\alpha^{(k)}+\Delta\mathcal{U}_\alpha^{(k)}
+\label{eqn:potup}
+\end{equation} 
+
+Both of the previous methods described rely on a considerably large amount of Monte Carlo simulation steps. That is due to the fact that the closer the set of potentials gets to solution, the harder it becomes to distinguish between statistical noise and a suitable potential correction. For this reason, as it can be seen in Figure (\ref{Fig:kernel}), MagiC has a built-in capacity of running parallel Monte Carlo simulation, which enables the user to reach the order of billions of simulation steps in a feasible timespan. Moreover, there is not a unique solution for a given RDF \cite{ibi} and eventually the solution can possible diverge at a certain point. Therefore, a satisfactory result depends on analysis of all outputs from inversion steps in order to guarantee convergence. Further explanations regarding functionalities and parameters for MagiC and GROMACS will be provided in the next section.  
 \section{Methods Description} 
 \section{Results and Discussion}
 \section{Conclusion} 

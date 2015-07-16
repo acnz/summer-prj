@@ -3,9 +3,15 @@
 \contentsline {section}{\numberline {2}Acknowledgements}{iii}{section.2}
 \contentsline {section}{\numberline {3}Introduction}{1}{section.3}
 \contentsline {section}{\numberline {4}Theoretical Basis}{2}{section.4}
-\contentsline {section}{\numberline {5}Methods Description}{2}{section.5}
-\contentsline {section}{\numberline {6}Results and Discussion}{2}{section.6}
-\contentsline {section}{\numberline {7}Conclusion}{2}{section.7}
-\contentsline {section}{\numberline {8}Nomenclature}{2}{section.8}
-\contentsline {section}{\numberline {9}References}{2}{section.9}
+\contentsline {subsection}{\numberline {4.1}Simulation Methods}{2}{subsection.4.1}
+\contentsline {subsubsection}{\numberline {4.1.1}Molecular Dynamics simulation}{2}{subsubsection.4.1.1}
+\contentsline {subsubsection}{\numberline {4.1.2}Monte Carlo simulation}{3}{subsubsection.4.1.2}
+\contentsline {subsection}{\numberline {4.2}Software Description}{4}{subsection.4.2}
+\contentsline {subsubsection}{\numberline {4.2.1}About GROMACS}{4}{subsubsection.4.2.1}
+\contentsline {subsubsection}{\numberline {4.2.2}About MagiC}{5}{subsubsection.4.2.2}
+\contentsline {section}{\numberline {5}Methods Description}{7}{section.5}
+\contentsline {section}{\numberline {6}Results and Discussion}{7}{section.6}
+\contentsline {section}{\numberline {7}Conclusion}{7}{section.7}
+\contentsline {section}{\numberline {8}Nomenclature}{7}{section.8}
+\contentsline {section}{\numberline {9}References}{7}{section.9}
 \contentsline {section}{\numberline {10}Appendix}{1}{section.10}
