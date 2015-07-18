@@ -362,8 +362,36 @@ For each inversion step $k$, Monte Carlo simulations are run using a set of pote
 \label{eqn:potup}
 \end{equation} 
 
-Both of the previous methods described rely on a considerably large amount of Monte Carlo simulation steps. That is due to the fact that the closer the set of potentials gets to solution, the harder it becomes to distinguish between statistical noise and a suitable potential correction. For this reason, as it can be seen in Figure (\ref{Fig:kernel}), MagiC has a built-in capacity of running parallel Monte Carlo simulation, which enables the user to reach the order of billions of simulation steps in a feasible timespan. Moreover, there is not a unique solution for a given RDF \cite{ibi} and eventually the solution can possible diverge at a certain point. Therefore, a satisfactory result depends on analysis of all outputs from inversion steps in order to guarantee convergence. Further explanations regarding functionalities and parameters for MagiC and GROMACS will be provided in the next section.  
+All of the previous methods described rely on a considerably large amount of Monte Carlo simulation steps. That is due to the fact that the closer the set of potentials gets to solution, the harder it becomes to distinguish between statistical noise and a suitable potential correction. For this reason, as it can be seen in Figure (\ref{Fig:kernel}), MagiC has a built-in capacity of running parallel Monte Carlo simulation, which enables the user to reach the order of billions of simulation steps in a feasible timespan. Moreover, there is not a unique solution for a given RDF \cite{ibi} and eventually the solution can possible diverge at a certain point. Therefore, a satisfactory result depends on analysis of all outputs from inversion steps in order to guarantee convergence. Further explanations regarding functionalities and parameters for MagiC and GROMACS will be provided in the next section.  
 \section{Methods Description} 
+silica model creation
+-solvation
+-pH
+-dmmd
+-dmdds
+-dmddd
+-osa
+-osai
+
+all atom boxes 
+-ne+si
+-dmdds+osa
+(-alessia's box )?
+
+magic process
+ne-si
+-coloumb
+-non coulomb
+dmdds+osa
+-coloumb
+-non coloumnb
+
+multi-state tech
+-derivation
+-comparisson
+
+(cg alessia's box)?
+
 \section{Results and Discussion}
 \section{Conclusion} 
 \section{Nomenclature} 
