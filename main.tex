@@ -331,7 +331,7 @@ MagiC is a software package developed by \citeA{magic}, which is a systematic me
   \end{center}
 \end{figure}
  
- The Iterative Boltzmann Inversion is a reasonable methodology to apply in the initial iterations, since it has fast convergence. The process derives from probability distribution function (Eq.(12)), thus for a pairwise particle interaction, the relationship between the reference RDF and Potential Mean Force (PMF) enables the use of an iterative method shown in Eq.(17) \cite{ibi}:
+ The Iterative Boltzmann Inversion is a reasonable methodology to apply in the initial iterations, since it has fast convergence. The process derives from probability distribution function (Eq.(\ref{eqn:rho})), thus for a pairwise particle interaction, the relationship between the reference RDF and Potential Mean Force (PMF) enables the use of an iterative method shown in Eq.(\ref{eqn:ibi}) \cite{ibi}:
    \begin{equation}
 \mathcal{U}^{(i+1)}(r) = \mathcal{U}^{(i)}(r) - \eta k_B T \ln{\left(\dfrac{\rho^{(i)}(r)}{\rho_{ref}(r)}\right)}
 \label{eqn:ibi}
@@ -364,34 +364,53 @@ For each inversion step $k$, Monte Carlo simulations are run using a set of pote
 
 All of the previous methods described rely on a considerably large amount of Monte Carlo simulation steps. That is due to the fact that the closer the set of potentials gets to solution, the harder it becomes to distinguish between statistical noise and a suitable potential correction. For this reason, as it can be seen in Figure (\ref{Fig:kernel}), MagiC has a built-in capacity of running parallel Monte Carlo simulation, which enables the user to reach the order of billions of simulation steps in a feasible timespan. Moreover, there is not a unique solution for a given RDF \cite{ibi} and eventually the solution can possible diverge at a certain point. Therefore, a satisfactory result depends on analysis of all outputs from inversion steps in order to guarantee convergence. Further explanations regarding functionalities and parameters for MagiC and GROMACS will be provided in the next section.  
 \section{Methods Description} 
-silica model creation
--solvation
--pH
--dmmd
--dmdds
--dmddd
--osa
--osai
 
-all atom boxes 
--ne+si
--dmdds+osa
-(-alessia's box )?
+The main objectives of the experiments of this project can be characterized in three stages: the first is to develop and simulate a suitable model for the silica oligomers and the surfactant in an atomistic scale considering a high pH system. Secondly, the aim is to use MagiC software package to develop potentials for the coarse-grain model proposed using a variety of techniques to improve efficiency of the process. Lastly, the focus will be the evaluation and validation of the self-assembly structures simulated using the coarse-grain models that were generated from the previous experiments.
 
-magic process
-ne-si
--coloumb
--non coulomb
-dmdds+osa
--coloumb
--non coloumnb
+\subsubsection{Atomistic Model Description}
 
-multi-state tech
--derivation
--comparisson
+ A initial concern for the atomistic simulations was the design of the water, surfactant and silica molecules. Beginning with the water molecule, the model used was the TIP4P water (Figure (\ref{Fig:atomistic}a)) created by \cite{tip4p} which is a widely used water model that uses OPLS-AA forcefield \cite{opls} parameters. For the DMDD surfactant, a model was created with the aid of co-workers in OPLS-AA forcefield which increases the reliability of the atomic interactions with the water models, since they use the same forcefield. This surfactant model includes 3 variations as a result of the high pH environment, because as described by \cite{hheads} the hydrophilic Nitrogen head receives an extra hydrogen thus in a solution it may be found the Neutral DMDD molecule (DMDDn), the Single charged DMDD molecule (DMDDs) and the Double charged DMDD molecule (DMDDd). Since atomistic simulations need to be preferably set in a neutral charge environment, an inert anionic Bromide counter-ion was selected to equilibrate the charges.
+ 
+   \begin{figure}[ht!]
+  \begin{center}
+	\includegraphics[width=0.50\textwidth]{./images/wip}
+	\caption{Graphical representation of the Atomistic models.}
+	\label{Fig:atomistic}
+  \end{center}
+\end{figure}
 
-(cg alessia's box)?
+When it comes to the description of the silica model, it is important to notice that the in solution substances should be treated differently from pure liquid silica precursor. As described in \cite{msuv} the silica precursor tetraethoxysilane (TEOS = $Si(OCH_2CH_3)_4$) is mixed in solution in a ratio of 1:2 in relation to the DMDD surfactant, that means in an atomistic level, one silica to each surfactant head.  However, due to the same process that might occur with the surfactant heads in high pH, the TEOS is forced to replace its Ethanol ramifications by hydrogen atoms forming an temporary unstable substance, the orthosilic acid (OSA). As stated by \cite{mjsilica} this unstable silica oligomer is the major representative of the silica portion in the system in liquid state, which in later stages may interact with surfactant structures and polymerise around them in a variety of configurations, turning into a nanoporous and highly organized silica structure. For the scope of this project only the orthosilic acid model will be considered, since the simulations will take place during the formation of the surfactant self-assembly structure which occurs in the early moments of the solution stabilization. Therefore, as it can be seen in Figure (\ref{Fig:atomistic}c) it is possible to consider two principal representations of the orthosilic acid: the neutral molecule (OSAn) and the ionized molecule (OSAi).
 
+The simulation boxes created for all  experiments were created using "genbox" (GROMACS package utility) following a standard procedure in order to ensure the consistency of the experiments, moreover all the atomistic simulations that were used as reference for coarse-graining process were run in NPT ensemble. In order to reach this NPT condition, all boxes received an energy minimization step in order to avoid system blow-up due to possible extreme potential energy spots created during box generation. That is because during random displacement of molecules some of them could overlap others and then cause a destabilization of the system. Afterwards, an equilibration step was necessary to reach the desired initial temperature and pressure conditions for the MD simulation. During equilibration, temperature coupling was kept at $298\ K$ using a v-rescaling thermostat \cite{vtstat} with time constant of $0.01\ ps$ and pressure coupling was kept at $1\ bar$ using a Berendsen barostat \cite{berend} with time constant of $0.5\ ps$.  Every equilibration simulation was run for $200\ ps$ with time step of $0.5\ fs$ using leap-frog algorithm.
+%
+%silica model creation
+%-solvation
+%-pH
+%-dmmd
+%-dmdds
+%-dmddd
+%-osa
+%-osai
+%
+%all atom boxes 
+%-ne+si
+%-dmdds+osa
+%(-alessia's box )?
+%
+%magic process
+%ne-si
+%-coloumb
+%-non coulomb
+%dmdds+osa
+%-coloumb
+%-non coloumnb
+%
+%multi-state tech
+%-derivation
+%-comparisson
+%
+%(cg alessia's box)?
+%
 \section{Results and Discussion}
 \section{Conclusion} 
 \section{Nomenclature} 
