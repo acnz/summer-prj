@@ -12,45 +12,52 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: ./biblio/biblio.bib
+Warning--I didn't find a database entry for "sba"
+Warning--I didn't find a database entry for "myproj"
+Warning--I didn't find a database entry for "ewald"
+Warning--I didn't find a database entry for "hheads"
+Warning--I didn't find a database entry for "vtstat"
+Warning--I didn't find a database entry for "berend"
 apacite.bst [2013/07/21 v6.03 APA bibliography style]
-You've used 1 entry,
+You've used 19 entries,
             6951 wiz_defined-function locations,
-            1274 strings with 10760 characters,
-and the built_in function-call counts, 1614 in all, are:
-= -- 199
-> -- 14
-< -- 56
-+ -- 61
-- -- 2
-* -- 95
-:= -- 290
-add.period$ -- 4
-call.type$ -- 1
-change.case$ -- 17
+            1423 strings with 15401 characters,
+and the built_in function-call counts, 42223 in all, are:
+= -- 5097
+> -- 361
+< -- 2173
++ -- 2408
+- -- 38
+* -- 2920
+:= -- 7932
+add.period$ -- 73
+call.type$ -- 19
+change.case$ -- 325
 chr.to.int$ -- 0
-cite$ -- 2
-duplicate$ -- 45
-empty$ -- 73
-format.name$ -- 24
-if$ -- 319
+cite$ -- 38
+duplicate$ -- 1225
+empty$ -- 1565
+format.name$ -- 655
+if$ -- 7724
 int.to.chr$ -- 0
-int.to.str$ -- 3
+int.to.str$ -- 57
 missing$ -- 0
-newline$ -- 28
-num.names$ -- 8
-pop$ -- 24
+newline$ -- 556
+num.names$ -- 152
+pop$ -- 697
 preamble$ -- 1
-purify$ -- 4
+purify$ -- 78
 quote$ -- 0
-skip$ -- 121
+skip$ -- 2353
 stack$ -- 0
-substring$ -- 70
-swap$ -- 30
-text.length$ -- 2
+substring$ -- 2602
+swap$ -- 687
+text.length$ -- 40
 text.prefix$ -- 0
 top$ -- 1
-type$ -- 80
+type$ -- 1520
 warning$ -- 0
-while$ -- 7
+while$ -- 219
 width$ -- 0
-write$ -- 33
+write$ -- 707
+(There were 6 warnings)

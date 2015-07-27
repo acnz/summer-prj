@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.3.2)  23 JUL 2015 20:26
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.6.12)  27 JUL 2015 17:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1324,7 +1324,7 @@ LaTeX Info: Redefining \BHBI on input line 130.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-<./images/StrathLogo.png, id=72, 598.3956pt x 136.3494pt>
+<./images/StrathLogo.png, id=76, 598.3956pt x 136.3494pt>
 File: ./images/StrathLogo.png Graphic file (type png)
 
 <use ./images/StrathLogo.png>
@@ -1393,48 +1393,12 @@ l.130 \newpage
 
  [2] [3]
 
-LaTeX Warning: Citation `mjsilica' undefined on input line 170.
-
-
-LaTeX Warning: Citation `bioinsp' undefined on input line 170.
-
-
-LaTeX Warning: Citation `silica1' undefined on input line 170.
-
-
-LaTeX Warning: Citation `mcm' undefined on input line 171.
-
-
 LaTeX Warning: Citation `sba' undefined on input line 171.
-
-
-LaTeX Warning: Citation `msuv' undefined on input line 171.
-
-
-LaTeX Warning: Citation `lipid' undefined on input line 171.
-
-
-LaTeX Warning: Citation `gromacs' undefined on input line 175.
-
-
-LaTeX Warning: Citation `martini' undefined on input line 179.
-
-
-LaTeX Warning: Citation `drymartini' undefined on input line 181.
-
-
-LaTeX Warning: Citation `magic' undefined on input line 181.
 
 
 LaTeX Warning: Citation `myproj' undefined on input line 187.
 
-[1]
-
-LaTeX Warning: Citation `umd' undefined on input line 196.
-
-
-LaTeX Warning: Citation `satoh' undefined on input line 226.
-
+[1] [2]
 LaTeX Font Info:    Calculating math sizes for size <6.99997> on input line 238
 .
 LaTeX Font Info:    External font `lmex10' loaded for size
@@ -1444,66 +1408,54 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <3.49998> on input line 238.
 
+
 LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <3.49998> not available
 (Font)              size <5> substituted on input line 238.
 
-[2]
-
-LaTeX Warning: Citation `metropolis' undefined on input line 260.
-
-[3]
-
-LaTeX Warning: Citation `gromanual' undefined on input line 283.
-
-
-LaTeX Warning: Citation `opls' undefined on input line 287.
-
-<./graphs/lj.pdf, id=230, 419.5126pt x 291.39645pt>
+[3] <./graphs/lj.pdf, id=236, 419.5126pt x 291.39645pt>
 File: ./graphs/lj.pdf Graphic file (type pdf)
  <use ./graphs/lj.pdf>
 Package pdftex.def Info: ./graphs/lj.pdf used on input line 296.
 (pdftex.def)             Requested size: 264.61333pt x 183.80304pt.
 
-[4pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) 
-has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.303 \begin{equation}
-                       <./graphs/lj.pdf>]
 
 LaTeX Warning: Citation `ewald' undefined on input line 310.
 
-<./images/magic.png, id=283, 1678.27pt x 431.6125pt>
+[4] <./images/magic.png, id=255, 1678.27pt x 431.6125pt>
 File: ./images/magic.png Graphic file (type png)
- <use ./images/magic.png>
+
+<use ./images/magic.png>
 Package pdftex.def Info: ./images/magic.png used on input line 317.
 (pdftex.def)             Requested size: 441.01773pt x 113.41522pt.
+ [5pdfTeX warning (ext4): destination with the same identifier (name{figure.1})
+ has been already used, duplicate ignored
 
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.324 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+2}) has been already used, duplicate ignored
 
-LaTeX Warning: Citation `magicmanu' undefined on input line 323.
-
-<./images/magiccore.pdf, id=291, 187.70125pt x 283.0575pt>
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.324 
+       <./graphs/lj.pdf> <./images/magic.png>]
+<./images/magiccore.pdf, id=307, 187.70125pt x 283.0575pt>
 File: ./images/magiccore.pdf Graphic file (type pdf)
 
 <use ./images/magiccore.pdf>
 Package pdftex.def Info: ./images/magiccore.pdf used on input line 328.
 (pdftex.def)             Requested size: 220.50887pt x 332.55371pt.
- [5pdfTeX warning (ext4): destination with the same identifier (name{figure.2})
+ [6pdfTeX warning (ext4): destination with the same identifier (name{figure.3})
  has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.333 
-       <./images/magic.png>]
-
-LaTeX Warning: Citation `ibi' undefined on input line 334.
-
-
-LaTeX Warning: Citation `imc' undefined on input line 342.
-
+l.343  \begin{equation}
+                        <./images/magiccore.pdf>]
 LaTeX Font Info:    Try loading font information for OT1+lmss on input line 348
 .
+
 (/usr/share/texmf/tex/latex/lm/ot1lmss.fd
 File: ot1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
@@ -1511,24 +1463,15 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             `lmss' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [6pdfTeX warning (ext4): destination with the same identifier (name{figure.3})
- has been already used, duplicate ignored
 
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.349 
-       <./images/magiccore.pdf>]
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
 (hyperref)                than one, level fixed on input line 370.
 
 
-LaTeX Warning: Citation `tip4p' undefined on input line 372.
-
-
 LaTeX Warning: Citation `hheads' undefined on input line 372.
 
-<./images/molsAA.png, id=349, 1367.1075pt x 1108.14pt>
+<./images/molsAA.png, id=354, 1367.1075pt x 1108.14pt>
 File: ./images/molsAA.png Graphic file (type png)
 
 <use ./images/molsAA.png>
@@ -1536,35 +1479,48 @@ Package pdftex.def Info: ./images/molsAA.png used on input line 376.
 (pdftex.def)             Requested size: 441.01773pt x 357.46964pt.
  [7]
 
-LaTeX Warning: Citation `vtstat' undefined on input line 384.
+LaTeX Warning: Citation `vtstat' undefined on input line 388.
 
 
-LaTeX Warning: Citation `berend' undefined on input line 384.
+LaTeX Warning: Citation `berend' undefined on input line 388.
 
-(./main.bbl
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [8pdfTeX warning (ext4): destination with the same identifier (name{figure.4})
- has been already used, duplicate ignored
+[8pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) 
+has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1 \begin{thebibliography}{}
-                              <./images/molsAA.png>]) [9]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 497.
+l.389 
+       <./images/molsAA.png>] (./main.bbl
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 33.
+
+(/usr/share/texmf/tex/latex/lm/t1lmtt.fd
+File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+Package microtype Info: Loading generic settings for font family
+(microtype)             `lmtt' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+ [9]) [10]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 492.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.497 \end{document}
+l.492 \end{document}
                      [1]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 497.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 492.
  (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 497.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 497.
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: B57C3129742099ADDEA1590B6BB38E0A;1020.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 492.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 492.
 
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: C5D228C89F024D5F49EBABADBE0ECD95;1122
+(rerunfilecheck)             After:  3F9CB4DD8B64B2F65466B97B2ECCF782;1103.
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 3.25002pt have occurred.
@@ -1572,16 +1528,16 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 497.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 492.
  ) 
 Here is how much of TeX's memory you used:
- 18537 strings out of 493304
- 314733 string characters out of 6139872
- 431291 words of memory out of 5000000
- 21407 multiletter control sequences out of 15000+600000
- 135873 words of font info for 165 fonts, out of 8000000 for 9000
+ 18613 strings out of 493304
+ 315847 string characters out of 6139871
+ 435450 words of memory out of 5000000
+ 21471 multiletter control sequences out of 15000+600000
+ 136582 words of font info for 169 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 45i,12n,43p,10461b,415s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 45i,12n,43p,10461b,482s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{cite.berend} has been referenced but does not exi
 st, replaced by a fixed one
 
@@ -1591,76 +1547,19 @@ pdfTeX warning (dest): name{cite.vtstat} has been referenced but does not exist
 pdfTeX warning (dest): name{cite.hheads} has been referenced but does not exist
 , replaced by a fixed one
 
-pdfTeX warning (dest): name{cite.tip4p} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{cite.imc} has been referenced but does not exist, r
-eplaced by a fixed one
-
-pdfTeX warning (dest): name{cite.ibi} has been referenced but does not exist, r
-eplaced by a fixed one
-
-pdfTeX warning (dest): name{cite.magicmanu} has been referenced but does not ex
-ist, replaced by a fixed one
-
 pdfTeX warning (dest): name{cite.ewald} has been referenced but does not exist,
  replaced by a fixed one
-
-pdfTeX warning (dest): name{cite.opls} has been referenced but does not exist, 
-replaced by a fixed one
-
-pdfTeX warning (dest): name{cite.gromanual} has been referenced but does not ex
-ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{cite.metropolis} has been referenced but does not e
-xist, replaced by a fixed one
-
-pdfTeX warning (dest): name{cite.satoh} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{cite.umd} has been referenced but does not exist, r
-eplaced by a fixed one
 
 pdfTeX warning (dest): name{cite.myproj} has been referenced but does not exist
 , replaced by a fixed one
 
-pdfTeX warning (dest): name{cite.magic} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{cite.drymartini} has been referenced but does not e
-xist, replaced by a fixed one
-
-pdfTeX warning (dest): name{cite.martini} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{cite.gromacs} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{cite.lipid} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{cite.msuv} has been referenced but does not exist, 
-replaced by a fixed one
-
 pdfTeX warning (dest): name{cite.sba} has been referenced but does not exist, r
 eplaced by a fixed one
 
-pdfTeX warning (dest): name{cite.mcm} has been referenced but does not exist, r
-eplaced by a fixed one
-
-pdfTeX warning (dest): name{cite.silica1} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{cite.bioinsp} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{cite.mjsilica} has been referenced but does not exi
-st, replaced by a fixed one
-
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvip
-s/lm/lm-mathex.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/sha
-re/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/
-lm-ec.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvip
+s/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/t
+exmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-m
+athit.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/
 fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmcsc1
 0.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/font
 s/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi7.pfb>
@@ -1670,12 +1569,12 @@ re/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm
 /lmr9.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/
 fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss8.
 pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/
-type1/public/lm/lmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
-fonts/symbols/msam10.pfb>
-Output written on main.pdf (14 pages, 1076946 bytes).
+type1/public/lm/lmsy7.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb></
+usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on main.pdf (15 pages, 1118521 bytes).
 PDF statistics:
- 467 PDF objects out of 1000 (max. 8388607)
- 395 compressed objects within 4 object streams
- 82 named destinations out of 1000 (max. 500000)
- 35490 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 504 PDF objects out of 1000 (max. 8388607)
+ 429 compressed objects within 5 object streams
+ 83 named destinations out of 1000 (max. 500000)
+ 36010 words of extra memory for PDF output out of 42996 (max. 10000000)
 

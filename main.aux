@@ -53,9 +53,9 @@
 \newlabel{eqn:verletr}{{5}{2}{Molecular Dynamics simulation}{equation.4.5}{}}
 \newlabel{eqn:verletv}{{6}{2}{Molecular Dynamics simulation}{equation.4.6}{}}
 \newlabel{eqn:vverletr}{{7}{2}{Molecular Dynamics simulation}{equation.4.7}{}}
-\newlabel{eqn:vverletv}{{8}{2}{Molecular Dynamics simulation}{equation.4.8}{}}
 \citation{satoh}
 \citation{metropolis}
+\newlabel{eqn:vverletv}{{8}{3}{Molecular Dynamics simulation}{equation.4.8}{}}
 \newlabel{eqn:leapfrogr}{{9}{3}{Molecular Dynamics simulation}{equation.4.9}{}}
 \newlabel{eqn:leapfrogv}{{10}{3}{Molecular Dynamics simulation}{equation.4.10}{}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {4.1.2}Monte Carlo simulation}{3}{subsubsection.4.1.2}}
@@ -66,19 +66,19 @@
 \citation{gromanual}
 \citation{satoh}
 \citation{opls}
+\citation{gromanual}
+\citation{ewald}
 \newlabel{eqn:average}{{14}{4}{Monte Carlo simulation}{equation.4.14}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Software Description}{4}{subsection.4.2}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.1}About GROMACS}{4}{subsubsection.4.2.1}}
 \newlabel{eqn:ljpot}{{15}{4}{About GROMACS}{equation.4.15}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Example of Lennard-Jones Potential (with reduced units). For this plot $\epsilon = 1$ and $\sigma = 1$ }}{4}{figure.1}}
-\newlabel{gfx:ljg}{{1}{4}{Example of Lennard-Jones Potential (with reduced units). For this plot $\epsilon = 1$ and $\sigma = 1$}{figure.1}{}}
-\citation{gromanual}
-\citation{ewald}
+\newlabel{eqn:ljf}{{16}{4}{About GROMACS}{equation.4.16}{}}
 \citation{magic}
 \citation{magicmanu}
 \citation{magicmanu}
 \citation{magicmanu}
-\newlabel{eqn:ljf}{{16}{5}{About GROMACS}{equation.4.16}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Example of Lennard-Jones Potential (with reduced units). For this plot $\epsilon = 1$ and $\sigma = 1$ }}{5}{figure.1}}
+\newlabel{gfx:ljg}{{1}{5}{Example of Lennard-Jones Potential (with reduced units). For this plot $\epsilon = 1$ and $\sigma = 1$}{figure.1}{}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.2}About MagiC}{5}{subsubsection.4.2.2}}
 \newlabel{subsubsec:magic}{{4.2.2}{5}{About MagiC}{subsubsection.4.2.2}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Graphical representation of Magic's systematic process. The central circle represent the process itself while the other two are input and output. The green boxes indicates each step inside MagiC process. }}{5}{figure.2}}
@@ -89,7 +89,6 @@
 \@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces MagiC kernel work-flow scheme}}{6}{figure.3}}
 \newlabel{Fig:kernel}{{3}{6}{MagiC kernel work-flow scheme}{figure.3}{}}
 \newlabel{eqn:ibi}{{17}{6}{About MagiC}{equation.4.17}{}}
-\newlabel{eqn:hami}{{18}{6}{About MagiC}{equation.4.18}{}}
 \citation{magic}
 \citation{ibi}
 \citation{tip4p}
@@ -97,21 +96,59 @@
 \citation{hheads}
 \citation{msuv}
 \citation{mjsilica}
+\newlabel{eqn:hami}{{18}{7}{About MagiC}{equation.4.18}{}}
 \newlabel{eqn:inv1}{{19}{7}{About MagiC}{equation.4.19}{}}
 \newlabel{eqn:inv2}{{20}{7}{About MagiC}{equation.4.20}{}}
 \newlabel{eqn:potup}{{21}{7}{About MagiC}{equation.4.21}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {5}Methods Description}{7}{section.5}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.0.3}Atomistic Model Description}{7}{subsubsection.5.0.3}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.0.3}Atomistic Molecular Model}{7}{subsubsection.5.0.3}}
 \citation{vtstat}
 \citation{berend}
-\bibdata{./biblio/biblio}
 \@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Graphical representation of the Atomistic models.}}{8}{figure.4}}
 \newlabel{Fig:atomistic}{{4}{8}{Graphical representation of the Atomistic models}{figure.4}{}}
-\bibcite{someone}{\citeauthoryear {Need\ \BBA{} Someone}{Need\ \BBA{} Someone}{{\APACyear {2025}}}}
-\APACbibcite{someone}{\citeauthoryear {Need\ \BBA{} Someone}{Need\ \BBA{} Someone}{{\APACyear {2025}}}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.0.4}Atomistic Simulation}{8}{subsubsection.5.0.4}}
+\bibdata{./biblio/biblio}
+\bibcite{drymartini}{\citeauthoryear {Arnarez\ \BOthers {.}}{Arnarez\ \BOthers {.}}{{\APACyear {2015}}}}
+\APACbibcite{drymartini}{\citeauthoryear {Arnarez\ \BOthers {.}}{Arnarez\ \BOthers {.}}{{\APACyear {2015}}}}
+\bibcite{umd}{\citeauthoryear {Frenkel\ \BBA{} Smit}{Frenkel\ \BBA{} Smit}{{\APACyear {2001}}}}
+\APACbibcite{umd}{\citeauthoryear {Frenkel\ \BBA{} Smit}{Frenkel\ \BBA{} Smit}{{\APACyear {2001}}}}
+\bibcite{tip4p}{\citeauthoryear {Jorgensen, Chandrasekhar, Madura, Impey,{}\ \BBA{} Klein}{Jorgensen\ \BOthers {.}}{{\APACyear {1983}}}}
+\APACbibcite{tip4p}{\citeauthoryear {Jorgensen, Chandrasekhar, Madura, Impey,{}\ \BBA{} Klein}{Jorgensen\ \BOthers {.}}{{\APACyear {1983}}}}
+\bibcite{opls}{\citeauthoryear {Jorgensen, Maxwell,{}\ \BBA{} Tirado-Rives}{Jorgensen\ \BOthers {.}}{{\APACyear {1996}}}}
+\APACbibcite{opls}{\citeauthoryear {Jorgensen, Maxwell,{}\ \BBA{} Tirado-Rives}{Jorgensen\ \BOthers {.}}{{\APACyear {1996}}}}
+\bibcite{mcm}{\citeauthoryear {Kresge\ \BBA{} Roth}{Kresge\ \BBA{} Roth}{{\APACyear {2013}}}}
+\APACbibcite{mcm}{\citeauthoryear {Kresge\ \BBA{} Roth}{Kresge\ \BBA{} Roth}{{\APACyear {2013}}}}
+\bibcite{imc}{\citeauthoryear {Lyubartsev\ \BBA{} Laaksonen}{Lyubartsev\ \BBA{} Laaksonen}{{\APACyear {1995}}}}
+\APACbibcite{imc}{\citeauthoryear {Lyubartsev\ \BBA{} Laaksonen}{Lyubartsev\ \BBA{} Laaksonen}{{\APACyear {1995}}}}
+\bibcite{martini}{\citeauthoryear {Marrink, Risselada, Yefimov, Tieleman,{}\ \BBA{} de Vries}{Marrink\ \BOthers {.}}{{\APACyear {2007}}}}
+\APACbibcite{martini}{\citeauthoryear {Marrink, Risselada, Yefimov, Tieleman,{}\ \BBA{} de Vries}{Marrink\ \BOthers {.}}{{\APACyear {2007}}}}
+\bibcite{metropolis}{\citeauthoryear {Metropolis, Rosenbluth, Rosenbluth, Teller,{}\ \BBA{} Teller}{Metropolis\ \BOthers {.}}{{\APACyear {1953}}}}
+\APACbibcite{metropolis}{\citeauthoryear {Metropolis, Rosenbluth, Rosenbluth, Teller,{}\ \BBA{} Teller}{Metropolis\ \BOthers {.}}{{\APACyear {1953}}}}
+\bibcite{magic}{\citeauthoryear {Mirzoev\ \BBA{} Lyubartsev}{Mirzoev\ \BBA{} Lyubartsev}{{\APACyear {2013}}}}
+\APACbibcite{magic}{\citeauthoryear {Mirzoev\ \BBA{} Lyubartsev}{Mirzoev\ \BBA{} Lyubartsev}{{\APACyear {2013}}}}
+\bibcite{magicmanu}{\citeauthoryear {Mirzoev\ \BBA{} Lyubartsev}{Mirzoev\ \BBA{} Lyubartsev}{{\APACyear {2014}}}}
+\APACbibcite{magicmanu}{\citeauthoryear {Mirzoev\ \BBA{} Lyubartsev}{Mirzoev\ \BBA{} Lyubartsev}{{\APACyear {2014}}}}
+\bibcite{ibi}{\citeauthoryear {Moore, Iacovella,{}\ \BBA{} McCabe}{Moore\ \BOthers {.}}{{\APACyear {2014}}}}
+\APACbibcite{ibi}{\citeauthoryear {Moore, Iacovella,{}\ \BBA{} McCabe}{Moore\ \BOthers {.}}{{\APACyear {2014}}}}
+\bibcite{bioinsp}{\citeauthoryear {Patwardhan}{Patwardhan}{{\APACyear {2011}}}}
+\APACbibcite{bioinsp}{\citeauthoryear {Patwardhan}{Patwardhan}{{\APACyear {2011}}}}
 \@writefile{toc}{\contentsline {section}{\numberline {6}Results and Discussion}{9}{section.6}}
 \@writefile{toc}{\contentsline {section}{\numberline {7}Conclusion}{9}{section.7}}
 \@writefile{toc}{\contentsline {section}{\numberline {8}Nomenclature}{9}{section.8}}
 \@writefile{toc}{\contentsline {section}{\numberline {9}References}{9}{section.9}}
+\bibcite{gromacs}{\citeauthoryear {Pronk\ \BOthers {.}}{Pronk\ \BOthers {.}}{{\APACyear {2013}}}}
+\APACbibcite{gromacs}{\citeauthoryear {Pronk\ \BOthers {.}}{Pronk\ \BOthers {.}}{{\APACyear {2013}}}}
+\bibcite{mjsilica}{\citeauthoryear {P\IeC {\'e}rez-S\IeC {\'a}nchez, Gomes,{}\ \BBA{} Jorge}{P\IeC {\'e}rez-S\IeC {\'a}nchez\ \BOthers {.}}{{\APACyear {2013}}}}
+\APACbibcite{mjsilica}{\citeauthoryear {P\IeC {\'e}rez-S\IeC {\'a}nchez, Gomes,{}\ \BBA{} Jorge}{P\IeC {\'e}rez-S\IeC {\'a}nchez\ \BOthers {.}}{{\APACyear {2013}}}}
+\bibcite{satoh}{\citeauthoryear {Satoh}{Satoh}{{\APACyear {2010}}}}
+\APACbibcite{satoh}{\citeauthoryear {Satoh}{Satoh}{{\APACyear {2010}}}}
+\bibcite{msuv}{\citeauthoryear {Tanev, Liang,{}\ \BBA{} Pinnavaia}{Tanev\ \BOthers {.}}{{\APACyear {1997}}}}
+\APACbibcite{msuv}{\citeauthoryear {Tanev, Liang,{}\ \BBA{} Pinnavaia}{Tanev\ \BOthers {.}}{{\APACyear {1997}}}}
+\bibcite{silica1}{\citeauthoryear {Tolbert, Firouzi, Stucky,{}\ \BBA{} Chmelka}{Tolbert\ \BOthers {.}}{{\APACyear {1997}}}}
+\APACbibcite{silica1}{\citeauthoryear {Tolbert, Firouzi, Stucky,{}\ \BBA{} Chmelka}{Tolbert\ \BOthers {.}}{{\APACyear {1997}}}}
+\bibcite{lipid}{\citeauthoryear {Tresset}{Tresset}{{\APACyear {2009}}}}
+\APACbibcite{lipid}{\citeauthoryear {Tresset}{Tresset}{{\APACyear {2009}}}}
+\bibcite{gromanual}{\citeauthoryear {van\nobreakspace  {}der Spoel\ \BOthers {.}}{van\nobreakspace  {}der Spoel\ \BOthers {.}}{{\APACyear {2013}}}}
+\APACbibcite{gromanual}{\citeauthoryear {van\nobreakspace  {}der Spoel\ \BOthers {.}}{van\nobreakspace  {}der Spoel\ \BOthers {.}}{{\APACyear {2013}}}}
 \@writefile{toc}{\contentsline {section}{\numberline {10}Appendix}{1}{section.10}}
 \newlabel{sec:appendix}{{10}{1}{Appendix}{section.10}{}}

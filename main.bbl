@@ -1,29 +1,609 @@
 \begin{thebibliography}{}
 
 \bibitem [\protect \citeauthoryear {%
-Need%
-\ \BBA {} Someone%
-}{%
-Need%
-\ \BBA {} Someone%
-}{%
-{\protect \APACyear {2025}}%
+Arnarez%
+\ \protect \BOthers {.}}{%
+Arnarez%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2015}}%
 }]{%
-someone}
+drymartini}
 \APACinsertmetastar {%
-someone}%
+drymartini}%
 \begin{APACrefauthors}%
-Need, A.%
-\BCBT {}\ \BBA {} Someone, T\BPBI C.%
+Arnarez, C.%
+, Uusitalo, J\BPBI J.%
+, Masman, M\BPBI F.%
+, Ingólfsson, H\BPBI I.%
+, de Jong, D\BPBI H.%
+, Melo, M\BPBI N.%
+\BDBL {}Marrink, S\BPBI J.%
 \end{APACrefauthors}%
 \unskip\
 \newblock
-\APACrefYearMonthDay{2025}{}{}.
+\APACrefYearMonthDay{2015}{}{}.
 \newblock
-{\BBOQ}\APACrefatitle {Mock article: You need to read more} {Mock article: You
-  need to read more}.{\BBCQ}
+{\BBOQ}\APACrefatitle {Dry Martini, a Coarse-Grained Force Field for Lipid
+  Membrane Simulations with Implicit Solvent} {Dry martini, a coarse-grained
+  force field for lipid membrane simulations with implicit solvent}.{\BBCQ}
 \newblock
-\APACjournalVolNumPages{Journal of Void Theory}{1}{1}{151-1510}.
+\APACjournalVolNumPages{Journal of Chemical Theory and
+  Computation}{11}{1}{260-275}.
+\newblock
+\begin{APACrefURL} \url{http://dx.doi.org/10.1021/ct500477k} \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1021/ct500477k} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Frenkel%
+\ \BBA {} Smit%
+}{%
+Frenkel%
+\ \BBA {} Smit%
+}{%
+{\protect \APACyear {2001}}%
+}]{%
+umd}
+\APACinsertmetastar {%
+umd}%
+\begin{APACrefauthors}%
+Frenkel, D.%
+\BCBT {}\ \BBA {} Smit, B.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2001}.
+\newblock
+\APACrefbtitle {Understanding Molecular Simulatio: From Algorithms to
+  Applications} {Understanding molecular simulatio: From algorithms to
+  applications}.
+\newblock
+\APACaddressPublisher{}{Elsevier Science}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Jorgensen%
+, Chandrasekhar%
+, Madura%
+, Impey%
+\BCBL {}\ \BBA {} Klein%
+}{%
+Jorgensen%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {1983}}%
+}]{%
+tip4p}
+\APACinsertmetastar {%
+tip4p}%
+\begin{APACrefauthors}%
+Jorgensen, W\BPBI L.%
+, Chandrasekhar, J.%
+, Madura, J\BPBI D.%
+, Impey, R\BPBI W.%
+\BCBL {}\ \BBA {} Klein, M\BPBI L.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1983}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Comparison of simple potential functions for simulating
+  liquid water} {Comparison of simple potential functions for simulating liquid
+  water}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{The Journal of Chemical Physics}{79}{2}{926-935}.
+\newblock
+\begin{APACrefURL}
+  \url{http://scitation.aip.org/content/aip/journal/jcp/79/2/10.1063/1.445869}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{http://dx.doi.org/10.1063/1.445869} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Jorgensen%
+, Maxwell%
+\BCBL {}\ \BBA {} Tirado-Rives%
+}{%
+Jorgensen%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {1996}}%
+}]{%
+opls}
+\APACinsertmetastar {%
+opls}%
+\begin{APACrefauthors}%
+Jorgensen, W\BPBI L.%
+, Maxwell, D\BPBI S.%
+\BCBL {}\ \BBA {} Tirado-Rives, J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1996}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Development and Testing of the OPLS All-Atom Force Field
+  on Conformational Energetics and Properties of Organic Liquids} {Development
+  and testing of the opls all-atom force field on conformational energetics and
+  properties of organic liquids}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of the American Chemical
+  Society}{118}{45}{11225-11236}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Kresge%
+\ \BBA {} Roth%
+}{%
+Kresge%
+\ \BBA {} Roth%
+}{%
+{\protect \APACyear {2013}}%
+}]{%
+mcm}
+\APACinsertmetastar {%
+mcm}%
+\begin{APACrefauthors}%
+Kresge, C\BPBI T.%
+\BCBT {}\ \BBA {} Roth, W\BPBI J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2013}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {The discovery of mesoporous molecular sieves from the
+  twenty year perspective} {The discovery of mesoporous molecular sieves from
+  the twenty year perspective}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Chem. Soc. Rev.}{42}{}{3663-3670}.
+\newblock
+\begin{APACrefURL} \url{http://dx.doi.org/10.1039/C3CS60016E} \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1039/C3CS60016E} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Lyubartsev%
+\ \BBA {} Laaksonen%
+}{%
+Lyubartsev%
+\ \BBA {} Laaksonen%
+}{%
+{\protect \APACyear {1995}}%
+}]{%
+imc}
+\APACinsertmetastar {%
+imc}%
+\begin{APACrefauthors}%
+Lyubartsev, A\BPBI P.%
+\BCBT {}\ \BBA {} Laaksonen, A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1995}{Oct}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Calculation of effective interaction potentials from
+  radial distribution functions: A reverse Monte Carlo approach} {Calculation
+  of effective interaction potentials from radial distribution functions: A
+  reverse monte carlo approach}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Phys. Rev. E}{52}{}{3730--3737}.
+\newblock
+\begin{APACrefURL} \url{http://link.aps.org/doi/10.1103/PhysRevE.52.3730}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1103/PhysRevE.52.3730} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Marrink%
+, Risselada%
+, Yefimov%
+, Tieleman%
+\BCBL {}\ \BBA {} de Vries%
+}{%
+Marrink%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2007}}%
+}]{%
+martini}
+\APACinsertmetastar {%
+martini}%
+\begin{APACrefauthors}%
+Marrink, S\BPBI J.%
+, Risselada, H\BPBI J.%
+, Yefimov, S.%
+, Tieleman, D\BPBI P.%
+\BCBL {}\ \BBA {} de Vries, A\BPBI H.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2007}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {The MARTINI Force Field: Coarse Grained Model for
+  Biomolecular Simulations} {The martini force field: Coarse grained model for
+  biomolecular simulations}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{The Journal of Physical Chemistry
+  B}{111}{27}{7812-7824}.
+\newblock
+\begin{APACrefURL} \url{http://dx.doi.org/10.1021/jp071097f} \end{APACrefURL}
+\newblock
+\APACrefnote{PMID: 17569554}
+\newblock
+\begin{APACrefDOI} \doi{10.1021/jp071097f} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Metropolis%
+, Rosenbluth%
+, Rosenbluth%
+, Teller%
+\BCBL {}\ \BBA {} Teller%
+}{%
+Metropolis%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {1953}}%
+}]{%
+metropolis}
+\APACinsertmetastar {%
+metropolis}%
+\begin{APACrefauthors}%
+Metropolis, N.%
+, Rosenbluth, A\BPBI W.%
+, Rosenbluth, M\BPBI N.%
+, Teller, A\BPBI H.%
+\BCBL {}\ \BBA {} Teller, E.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1953}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Equation of State Calculations by Fast Computing
+  Machines} {Equation of state calculations by fast computing machines}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{The Journal of Chemical Physics}{21}{6}{1087-1092}.
+\newblock
+\begin{APACrefURL}
+  \url{http://scitation.aip.org/content/aip/journal/jcp/21/6/10.1063/1.1699114}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{http://dx.doi.org/10.1063/1.1699114} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Mirzoev%
+\ \BBA {} Lyubartsev%
+}{%
+Mirzoev%
+\ \BBA {} Lyubartsev%
+}{%
+{\protect \APACyear {2013}}%
+}]{%
+magic}
+\APACinsertmetastar {%
+magic}%
+\begin{APACrefauthors}%
+Mirzoev, A.%
+\BCBT {}\ \BBA {} Lyubartsev, A\BPBI P.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2013}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {MagiC: Software Package for Multiscale Modeling} {Magic:
+  Software package for multiscale modeling}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Chemical Theory and
+  Computation}{9}{3}{1512-1520}.
+\newblock
+\begin{APACrefURL} \url{http://dx.doi.org/10.1021/ct301019v} \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1021/ct301019v} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Mirzoev%
+\ \BBA {} Lyubartsev%
+}{%
+Mirzoev%
+\ \BBA {} Lyubartsev%
+}{%
+{\protect \APACyear {2014}}%
+}]{%
+magicmanu}
+\APACinsertmetastar {%
+magicmanu}%
+\begin{APACrefauthors}%
+Mirzoev, A.%
+\BCBT {}\ \BBA {} Lyubartsev, A\BPBI P.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2014}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {MAGIC: User manual. Version 1.0.3} {Magic: User manual.
+  version 1.0.3}{\BBCQ}\ [\bibcomputersoftwaremanual].
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Moore%
+, Iacovella%
+\BCBL {}\ \BBA {} McCabe%
+}{%
+Moore%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2014}}%
+}]{%
+ibi}
+\APACinsertmetastar {%
+ibi}%
+\begin{APACrefauthors}%
+Moore, T\BPBI C.%
+, Iacovella, C\BPBI R.%
+\BCBL {}\ \BBA {} McCabe, C.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2014}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Derivation of coarse-grained potentials via multistate
+  iterative Boltzmann inversion} {Derivation of coarse-grained potentials via
+  multistate iterative boltzmann inversion}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{The Journal of Chemical Physics}{140}{22}{-}.
+\newblock
+\begin{APACrefURL}
+  \url{http://scitation.aip.org/content/aip/journal/jcp/140/22/10.1063/1.4880555}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{http://dx.doi.org/10.1063/1.4880555} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Patwardhan%
+}{%
+Patwardhan%
+}{%
+{\protect \APACyear {2011}}%
+}]{%
+bioinsp}
+\APACinsertmetastar {%
+bioinsp}%
+\begin{APACrefauthors}%
+Patwardhan, S\BPBI V.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2011}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Biomimetic and bioinspired silica: recent developments
+  and applications} {Biomimetic and bioinspired silica: recent developments and
+  applications}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Chem. Commun.}{47}{}{7567-7582}.
+\newblock
+\begin{APACrefURL} \url{http://dx.doi.org/10.1039/C0CC05648K} \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1039/C0CC05648K} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Pronk%
+\ \protect \BOthers {.}}{%
+Pronk%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2013}}%
+}]{%
+gromacs}
+\APACinsertmetastar {%
+gromacs}%
+\begin{APACrefauthors}%
+Pronk, S.%
+, Páll, S.%
+, Schulz, R.%
+, Larsson, P.%
+, Bjelkmar, P.%
+, Apostolov, R.%
+\BDBL {}Lindahl, E.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2013}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {GROMACS 4.5: a high-throughput and highly parallel open
+  source molecular simulation toolkit} {Gromacs 4.5: a high-throughput and
+  highly parallel open source molecular simulation toolkit}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Bioinformatics}{29}{7}{845-854}.
+\newblock
+\begin{APACrefURL}
+  \url{http://bioinformatics.oxfordjournals.org/content/29/7/845.abstract}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1093/bioinformatics/btt055} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Pérez-Sánchez%
+, Gomes%
+\BCBL {}\ \BBA {} Jorge%
+}{%
+Pérez-Sánchez%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2013}}%
+}]{%
+mjsilica}
+\APACinsertmetastar {%
+mjsilica}%
+\begin{APACrefauthors}%
+Pérez-Sánchez, G.%
+, Gomes, J\BPBI R\BPBI B.%
+\BCBL {}\ \BBA {} Jorge, M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2013}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Modeling Self-Assembly of Silica/Surfactant
+  Mesostructures in the Templated Synthesis of Nanoporous Solids} {Modeling
+  self-assembly of silica/surfactant mesostructures in the templated synthesis
+  of nanoporous solids}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Langmuir}{29}{7}{2387-2396}.
+\newblock
+\begin{APACrefURL} \url{http://dx.doi.org/10.1021/la3046274} \end{APACrefURL}
+\newblock
+\APACrefnote{PMID: 23343439}
+\newblock
+\begin{APACrefDOI} \doi{10.1021/la3046274} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Satoh%
+}{%
+Satoh%
+}{%
+{\protect \APACyear {2010}}%
+}]{%
+satoh}
+\APACinsertmetastar {%
+satoh}%
+\begin{APACrefauthors}%
+Satoh, A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2010}.
+\newblock
+\APACrefbtitle {Introduction to Practice of Molecular Simulation: Molecular
+  Dynamics, Monte Carlo, Brownian Dynamics, Lattice Boltzmann and Dissipative
+  Particle Dynamics} {Introduction to practice of molecular simulation:
+  Molecular dynamics, monte carlo, brownian dynamics, lattice boltzmann and
+  dissipative particle dynamics}.
+\newblock
+\APACaddressPublisher{}{Elsevier Science}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Tanev%
+, Liang%
+\BCBL {}\ \BBA {} Pinnavaia%
+}{%
+Tanev%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {1997}}%
+}]{%
+msuv}
+\APACinsertmetastar {%
+msuv}%
+\begin{APACrefauthors}%
+Tanev, P\BPBI T.%
+, Liang, Y.%
+\BCBL {}\ \BBA {} Pinnavaia, T\BPBI J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1997}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Assembly of Mesoporous Lamellar Silicas with
+  Hierarchical Particle Architectures} {Assembly of mesoporous lamellar silicas
+  with hierarchical particle architectures}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of the American Chemical
+  Society}{119}{37}{8616-8624}.
+\newblock
+\begin{APACrefURL} \url{http://dx.doi.org/10.1021/ja970228v} \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1021/ja970228v} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Tolbert%
+, Firouzi%
+, Stucky%
+\BCBL {}\ \BBA {} Chmelka%
+}{%
+Tolbert%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {1997}}%
+}]{%
+silica1}
+\APACinsertmetastar {%
+silica1}%
+\begin{APACrefauthors}%
+Tolbert, S\BPBI H.%
+, Firouzi, A.%
+, Stucky, G\BPBI D.%
+\BCBL {}\ \BBA {} Chmelka, B\BPBI F.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1997}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Magnetic Field Alignment of Ordered Silicate-Surfactant
+  Composites and Mesoporous Silica} {Magnetic field alignment of ordered
+  silicate-surfactant composites and mesoporous silica}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Science}{278}{5336}{264-268}.
+\newblock
+\begin{APACrefURL} \url{http://www.jstor.org/stable/2894713} \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.2307/2894713} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Tresset%
+}{%
+Tresset%
+}{%
+{\protect \APACyear {2009}}%
+}]{%
+lipid}
+\APACinsertmetastar {%
+lipid}%
+\begin{APACrefauthors}%
+Tresset, G.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2009}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {The multiple faces of self-assembled lipidic systems}
+  {The multiple faces of self-assembled lipidic systems}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{PMC Biophysics}{2}{1}{}.
+\newblock
+\begin{APACrefURL} \url{http://dx.doi.org/10.1186/1757-5036-2-3}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1186/1757-5036-2-3} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+van~der Spoel%
+\ \protect \BOthers {.}}{%
+van~der Spoel%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2013}}%
+}]{%
+gromanual}
+\APACinsertmetastar {%
+gromanual}%
+\begin{APACrefauthors}%
+van~der Spoel, D.%
+, Lindahl, E.%
+, Hess, B.%
+, van Buuren, A\BPBI R.%
+, Apol, E.%
+, Meulenhoff, P\BPBI J.%
+\BDBL {}Berendsen, H\BPBI J\BPBI C.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2013}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Gromacs User Manual version 4.6.5} {Gromacs user manual
+  version 4.6.5}{\BBCQ}\ [\bibcomputersoftwaremanual].
 \PrintBackRefs{\CurrentBib}
 
 \end{thebibliography}
