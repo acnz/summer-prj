@@ -383,7 +383,7 @@ When it comes to the description of the silica model, it is important to notice 
 
 \subsubsection{Atomistic Simulation}
 
-Regarding the composition of each simulation box 
+Regarding the composition of each simulation box, the main idea was to work upon the pH value of the actual solution. The reason of having multiple models of molecules in which each one represent a different stage of deprotonation, that means the higher the number of molecules with missing hydrogen the higher the pH that is represented on the system. Therefore, the types of boxes that were chosen 
 
 The simulation boxes created for all  experiments were created using "genbox" (GROMACS package utility) following a standard procedure in order to ensure the consistency of the experiments, moreover all the atomistic simulations that were used as reference for coarse-graining process were run in NPT ensemble. In order to reach this NPT condition, all boxes received an energy minimization step in order to avoid system blow-up due to possible extreme potential energy spots created during box generation. That is because during random displacement of molecules some of them could overlap others and then cause a destabilization of the system. Afterwards, an equilibration step was necessary to reach the desired initial temperature and pressure conditions for the MD simulation. During equilibration, temperature coupling was kept at $298\ K$ using a v-rescaling thermostat \cite{vtstat} with time constant of $0.01\ ps$ and pressure coupling was kept at $1\ bar$ using a Berendsen barostat \cite{berend} with time constant of $0.5\ ps$.  Every equilibration simulation was run for $200\ ps$ with time step of $0.5\ fs$ using leap-frog algorithm.
 
