@@ -19,45 +19,45 @@ Warning--I didn't find a database entry for "hheads"
 Warning--I didn't find a database entry for "vtstat"
 Warning--I didn't find a database entry for "berend"
 apacite.bst [2013/07/21 v6.03 APA bibliography style]
-You've used 19 entries,
+You've used 21 entries,
             6951 wiz_defined-function locations,
-            1423 strings with 15401 characters,
-and the built_in function-call counts, 42223 in all, are:
-= -- 5097
-> -- 361
-< -- 2173
-+ -- 2408
-- -- 38
-* -- 2920
-:= -- 7932
-add.period$ -- 73
-call.type$ -- 19
-change.case$ -- 325
+            1441 strings with 15973 characters,
+and the built_in function-call counts, 46756 in all, are:
+= -- 5653
+> -- 394
+< -- 2419
++ -- 2676
+- -- 42
+* -- 3242
+:= -- 8811
+add.period$ -- 81
+call.type$ -- 21
+change.case$ -- 359
 chr.to.int$ -- 0
-cite$ -- 38
-duplicate$ -- 1225
-empty$ -- 1565
-format.name$ -- 655
-if$ -- 7724
+cite$ -- 42
+duplicate$ -- 1345
+empty$ -- 1725
+format.name$ -- 711
+if$ -- 8547
 int.to.chr$ -- 0
-int.to.str$ -- 57
+int.to.str$ -- 63
 missing$ -- 0
-newline$ -- 556
-num.names$ -- 152
-pop$ -- 697
+newline$ -- 615
+num.names$ -- 168
+pop$ -- 750
 preamble$ -- 1
-purify$ -- 78
+purify$ -- 86
 quote$ -- 0
-skip$ -- 2353
+skip$ -- 2612
 stack$ -- 0
-substring$ -- 2602
-swap$ -- 687
-text.length$ -- 40
+substring$ -- 2893
+swap$ -- 756
+text.length$ -- 44
 text.prefix$ -- 0
 top$ -- 1
-type$ -- 1520
+type$ -- 1680
 warning$ -- 0
-while$ -- 219
+while$ -- 238
 width$ -- 0
-write$ -- 707
+write$ -- 781
 (There were 6 warnings)

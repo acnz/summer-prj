@@ -162,6 +162,39 @@ Kresge, C\BPBI T.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Lee%
+, Salsbury%
+\BCBL {}\ \BBA {} Brooks%
+}{%
+Lee%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2004}}%
+}]{%
+dynph}
+\APACinsertmetastar {%
+dynph}%
+\begin{APACrefauthors}%
+Lee, M\BPBI S.%
+, Salsbury, F\BPBI R.%
+\BCBL {}\ \BBA {} Brooks, C\BPBI L.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2004}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Constant-pH molecular dynamics using continuous
+  titration coordinates} {Constant-ph molecular dynamics using continuous
+  titration coordinates}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Proteins: Structure, Function, and
+  Bioinformatics}{56}{4}{738--752}.
+\newblock
+\begin{APACrefURL} \url{http://dx.doi.org/10.1002/prot.20128} \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1002/prot.20128} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Lyubartsev%
 \ \BBA {} Laaksonen%
 }{%
@@ -604,6 +637,40 @@ van~der Spoel, D.%
 \newblock
 {\BBOQ}\APACrefatitle {Gromacs User Manual version 4.6.5} {Gromacs user manual
   version 4.6.5}{\BBCQ}\ [\bibcomputersoftwaremanual].
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Wallace%
+\ \BBA {} Shen%
+}{%
+Wallace%
+\ \BBA {} Shen%
+}{%
+{\protect \APACyear {2012}}%
+}]{%
+phsol}
+\APACinsertmetastar {%
+phsol}%
+\begin{APACrefauthors}%
+Wallace, J\BPBI A.%
+\BCBT {}\ \BBA {} Shen, J\BPBI K.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2012}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Charge-leveling and proper treatment of long-range
+  electrostatics in all-atom molecular dynamics at constant pH}
+  {Charge-leveling and proper treatment of long-range electrostatics in
+  all-atom molecular dynamics at constant ph}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{The Journal of Chemical Physics}{137}{18}{-}.
+\newblock
+\begin{APACrefURL}
+  \url{http://scitation.aip.org/content/aip/journal/jcp/137/18/10.1063/1.4766352}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{http://dx.doi.org/10.1063/1.4766352} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \end{thebibliography}

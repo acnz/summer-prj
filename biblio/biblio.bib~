@@ -287,6 +287,19 @@ year = {1996} }
 	year		= {2014}
 }
 
+@article{phsol,
+   author = "Wallace, Jason A. and Shen, Jana K.",
+   title = "Charge-leveling and proper treatment of long-range electrostatics in all-atom molecular dynamics at constant pH",
+   journal = "The Journal of Chemical Physics",
+   year = "2012",
+   volume = "137",
+   number = "18", 
+   eid = 184105,
+   pages = "-",
+   url = "http://scitation.aip.org/content/aip/journal/jcp/137/18/10.1063/1.4766352",
+   doi = "http://dx.doi.org/10.1063/1.4766352" 
+}
+
 @article{someone,
 author = {Need, Articles and Someone, To Cite },
 title = {Mock article: You need to read more},
