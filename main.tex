@@ -387,9 +387,44 @@ Regarding the composition of each simulation box, the main idea was to work upon
 
  There are several techniques such as represented in work done by \cite{dynph} which are capable to recreate the dynamic behaviour of the pH in solution, which probably can aid to obtain a more accurate results in when it comes to the self-assembled structures in an atomistic level. However, the adoption of such methods goes far beyond the scope of this project's main objectives, and instead in order to maintain the system with a less complex structure only high pH values were represented in simulation boxes. The types of boxes that were chosen used a single state of the molecule to represent a pseudo-high pH solution, because most of them are extreme cases that may not exist in reality but they are good approximations of real systems.
 
- In previous works, the main subject of study was the DMDDn model, because even though it represent the most extreme case in which all amphiphilic heads are deprotonated, indicating a very high pH, it still a feasible approach to real high pH solution and furthermore provides the advantage of not presenting coulomb forces in the coarse-grain model. However, when the silica precursor is introduced in the system it may not be realistic to assume that the OSA model will ionize all its hydrogens, since it only polymerizes in further stages, after the interaction with the surfactant. Hence, the adopted model was the OSAi molecular type that when used together with DMDDn still a system with elevated pH but slightly reduced when compared to pure surfactant solution, since it has non-ionized hydrogen. The simulation boxes where generated based in DMDDn simulations that already had been equilibrated into a layer just by removing the water and putting the right amount of OSAi and then resolvating the box. 
+ In previous works, the main subject of study was the DMDDn model, because even though it represent the most extreme case in which all polar heads are deprotonated, indicating a very high pH, it still a feasible approach to real high pH solution and furthermore provides the advantage of not presenting coulomb forces in the coarse-grain model. However, when the silica precursor is introduced in the system it might be unrealistic to assume that the OSA model will ionize all its hydrogens, since it only polymerizes in further stages after the interaction with the surfactant. Hence, the adopted model was the OSAi molecular type that when used together with DMDDn still a system with elevated pH but slightly reduced when compared to pure surfactant solution, since it has non-ionized hydrogens. For this kind of systems two approaches were adopted in order to recreate the simulation boxes. The first method was to randomly insert all molecules inside the box at adequate ratios. The second was to use simulation boxes that were generated based in DMDDn simulations that already had been equilibrated into a layer just by removing the water and putting the right amount of OSAi and then resolvating the box. The specific number of molecules of each type is described in Table (\ref{tab:atombox}), furthermore the implications concerning the use of both methods of box creation will be discussed in Section (\ref{sec:atmbxdiss}).
  
-The simulation boxes created for all  experiments were created using "genbox" (GROMACS package utility) following a standard procedure in order to ensure the consistency of the experiments, moreover all the atomistic simulations that were used as reference for coarse-graining process were run in NPT ensemble. In order to reach this NPT condition, all boxes received an energy minimization step in order to avoid system blow-up due to possible extreme potential energy spots created during box generation. That is because during random displacement of molecules some of them could overlap others and then cause a destabilization of the system. Afterwards, an equilibration step was necessary to reach the desired initial temperature and pressure conditions for the MD simulation. During equilibration, temperature coupling was kept at $298\ K$ using a v-rescaling thermostat \cite{vtstat} with time constant of $0.01\ ps$ and pressure coupling was kept at $1\ bar$ using a Berendsen barostat \cite{berend} with time constant of $0.5\ ps$.  Every equilibration simulation was run for $200\ ps$ with time step of $0.5\ fs$ using leap-frog algorithm.
+ The second molecular model chosen to represent the surfactant was DMDDs. It was chosen because not only it represents a mid-state between protonation and deprotonation in the polar heads, but also it presents differentiated behaviour when compared to the previous model due to coulombic interactions within the assembled layer. Moreover, the DMDDs simulation boxes can be considered as slightly elevated pH systems when used in conjunction with ionic silica model, since it has just only one ionized head extra per surfactant. In the case of DMDDs, two types of systems were studied: one containing only DMDDs surfactant with Bromide counter-ions to equilibrate the charges, and another with DMDDs and OSAi using Sodium as counter-ion. All boxes were generated using by random placement of the molecules, to ensure whether it occurs layer self-assembly of surfactant or not in both cases, and as the same information about the composition is shown in Table (\ref{tab:atombox}).
+ 
+ \begin{table*}[ht!] 
+  \centering
+\begin{threeparttable}
+
+  \caption{Table generated by Excel2LaTeX from sheet 'Sheet1'}
+
+    \begin{tabular}{rrrrrr}
+    \toprule
+    Model & Depth & Width & Angle & Factor 1 & Factor 2 \\
+	& (mm) & (mm) & (°)  &  &  \\
+    \midrule
+    111   & 1,00  & 1,50  & 10\tnote{a}   & 357.921 & 532.289 \\
+    112   & 1,00  & 1,50  & 15   & 382.379 & 567.234 \\
+    113   & 1,00  & 1,50  & 20   & 383.863 & 569.600 \\
+    121   & 1,00  & 2,00  & 10   & 398.199 & 590.473 \\
+    122   & 1,00  & 2,00  & 15   & 486.306 & 710.483 \\
+    123   & 1,00  & 2,00  & 20   & 430.330 & 636.471 \\
+         \midrule
+          &       &       & Sum: & 12.138.966 & 17.932.100 \\
+    \bottomrule
+    \end{tabular}%
+    \begin{tablenotes}
+    	\item[a] This should be cited with a \citeA{magic}
+    	\item[b] And this is another note
+    \end{tablenotes}
+  \label{tab:atombox}%
+\end{threeparttable} 
+\end{table*}
+
+It is noticeable that most atomistic boxes have a different concentration. This fact derives from the idea of providing flexibility to the coarse grained model, because they will be used as references to the coarse-grain model. The analysis of the results from previous experiences \cite{myproj}, it is possible to observe that the coarse-grain model can represent and adapt to different apparent concentrations, this fact also means that the coarse-grain potentials obtained from these atomistic simulation boxes contains a certain degree of similarity between them, at least when it refers to the position of the peaks and valleys. Therefore, having multiple similar concentrations within a short range can only benefit the final result obtained since flexibility is a desirable property. Another important point highlight is the box size. For all cases we have two ranges of size: the first is a small box with side bigger than the DMDD molecule (about $16 \ \AA$) used to obtain initial short range potentials; and a big size box with side at least over $40 \ \AA$ to obtain long range potentials. A more detailed explanation about the difference of long range and short range potentials will be given in Section (\ref{expMAGIC})
+
+The simulation boxes generated for all experiments were created using "genbox" (GROMACS package utility) following a standard procedure in order to ensure the consistency of the experiments, moreover all the atomistic simulations that were used as reference for coarse-graining process were run in NPT ensemble. In order to reach this NPT condition, all boxes received an energy minimization step in order to avoid system blow-up due to possible extreme potential energy spots created during box generation. That is because during random displacement of molecules some of them could overlap others and then cause a destabilization of the system. Afterwards, an equilibration step was necessary to reach the desired initial temperature and pressure conditions for the MD simulation. During equilibration, temperature coupling was kept at $298\ K$ using a v-rescaling thermostat \cite{vtstat} with time constant of $0.01\ ps$ and pressure coupling was kept at $1\ bar$ using a Berendsen barostat \cite{berend} with time constant of $0.5\ ps$.  Every equilibration simulation was run for $200\ ps$ with time step of $0.5\ fs$ using leap-frog algorithm.
+
+
 
 %all atom boxes 
 %-ne+si

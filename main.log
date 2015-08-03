@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.6.12)  30 JUL 2015 17:43
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.3.2)  3 AUG 2015 15:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1481,10 +1481,35 @@ Package pdftex.def Info: ./images/molsAA.png used on input line 376.
 l.387 
        <./images/molsAA.png>]
 
-LaTeX Warning: Citation `vtstat' undefined on input line 392.
+LaTeX Warning: Reference `sec:atmbxdiss' on page 9 undefined on input line 390.
 
 
-LaTeX Warning: Citation `berend' undefined on input line 392.
+LaTeX Font Info:    Try loading font information for TS1+lmr on input line 403.
+
+(/usr/share/texmf/tex/latex/lm/ts1lmr.fd
+File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+
+LaTeX Warning: Command \r invalid in math mode on input line 423.
+
+
+LaTeX Warning: Command \r invalid in math mode on input line 423.
+
+
+LaTeX Warning: Reference `expMAGIC' on page 9 undefined on input line 423.
+
+[9pdfTeX warning (ext4): destination with the same identifier (name{table.1}) h
+as been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.424 
+      ]
+
+LaTeX Warning: Citation `vtstat' undefined on input line 425.
+
+
+LaTeX Warning: Citation `berend' undefined on input line 425.
 
 (./main.bbl
 LaTeX Font Info:    Try loading font information for T1+lmtt on input line 33.
@@ -1495,18 +1520,18 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             `lmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [9] [10]) [11]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 496.
+ [10]) [11]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 531.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.496 \end{document}
+l.531 \end{document}
                      [1]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 496.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 531.
  (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 496.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 496.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 531.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 531.
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 33D95EDCFA95805D24A3AD949356EAFC;1083.
 
@@ -1517,16 +1542,16 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 496.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 531.
  ) 
 Here is how much of TeX's memory you used:
- 18624 strings out of 493304
- 315930 string characters out of 6139871
- 438655 words of memory out of 5000000
- 21479 multiletter control sequences out of 15000+600000
- 136582 words of font info for 169 fonts, out of 8000000 for 9000
+ 18669 strings out of 493304
+ 316919 string characters out of 6139872
+ 434696 words of memory out of 5000000
+ 21519 multiletter control sequences out of 15000+600000
+ 136947 words of font info for 170 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 45i,12n,43p,10461b,491s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 45i,15n,43p,10461b,476s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{cite.berend} has been referenced but does not exi
 st, replaced by a fixed one
 
@@ -1546,24 +1571,25 @@ pdfTeX warning (dest): name{cite.sba} has been referenced but does not exist, r
 eplaced by a fixed one
 
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvip
-s/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/t
-exmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-m
-athit.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/
-fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmcsc1
-0.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/font
-s/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi7.pfb>
-</usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1
-/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr5.pfb></usr/sha
-re/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm
-/lmr9.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/
-fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss8.
-pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/
-type1/public/lm/lmsy7.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb></
-usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on main.pdf (16 pages, 1122725 bytes).
+s/lm/lm-ts1.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texm
+f/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-math
+sy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}</usr/share/texmf/fon
+ts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pf
+b></usr/share/texmf/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf/fonts/t
+ype1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></
+usr/share/texmf/fonts/type1/public/lm/lmmi7.pfb></usr/share/texmf/fonts/type1/p
+ublic/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/shar
+e/texmf/fonts/type1/public/lm/lmr5.pfb></usr/share/texmf/fonts/type1/public/lm/
+lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr9.pfb></usr/share/texmf/fon
+ts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pf
+b></usr/share/texmf/fonts/type1/public/lm/lmss8.pfb></usr/share/texmf/fonts/typ
+e1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy7.pfb></usr
+/share/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on main.pdf (16 pages, 1127377 bytes).
 PDF statistics:
- 519 PDF objects out of 1000 (max. 8388607)
- 443 compressed objects within 5 object streams
- 86 named destinations out of 1000 (max. 500000)
- 36010 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 531 PDF objects out of 1000 (max. 8388607)
+ 455 compressed objects within 5 object streams
+ 87 named destinations out of 1000 (max. 500000)
+ 36522 words of extra memory for PDF output out of 42996 (max. 10000000)
 
