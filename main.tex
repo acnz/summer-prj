@@ -424,27 +424,20 @@ It is noticeable that most atomistic boxes have a different concentration. This 
 
 The simulation boxes generated for all experiments were created using "genbox" (GROMACS package utility) following a standard procedure in order to ensure the consistency of the experiments, moreover all the atomistic simulations that were used as reference for coarse-graining process were run in NPT ensemble. In order to reach this NPT condition, all boxes received an energy minimization step in order to avoid system blow-up due to possible extreme potential energy spots created during box generation. That is because during random displacement of molecules some of them could overlap others and then cause a destabilization of the system. Afterwards, an equilibration step was necessary to reach the desired initial temperature and pressure conditions for the MD simulation. During equilibration, temperature coupling was kept at $298\ K$ using a v-rescaling thermostat \cite{vtstat} with time constant of $0.01\ ps$ and pressure coupling was kept at $1\ bar$ using a Berendsen barostat \cite{berend} with time constant of $0.5\ ps$.  Every equilibration simulation was run for $200\ ps$ with time step of $0.5\ fs$ using leap-frog algorithm.
 
+ When it comes to the final simulation run, even though it have different structural parameters for each box content, all of them followed the same ensemble with temperature kept at $298\ K$ by a Nosé-Hoover thermostat \cite{nose} \cite{hoover} and pressure kept at $1\ bar$ by a Parrinello-Rahman barostat \cite{prbstat}. Moreover, simulation time was also standardized. Every simulation lasted $150\ ns$ with a time step of $1\ fs$ using leap-frog algorithm. But for the sake of experiments using MagiC, the first $50\ ns$ of the simulations were disregarded since during this time the system was still in equilibration, and therefore that would affect reference RDF values.
+ 
+\subsection{Coarse-grained molecular Model}
 
 
-%all atom boxes 
-%-ne+si
-%-dmdds+osa
-%(-alessia's box )?
-%
 %magic process
-%ne-si
-%-coloumb
-%-non coulomb
-%dmdds+osa
+%dmdds
 %-coloumb
 %-non coloumnb
-%
-%multi-state tech
-%-derivation
-%-comparisson
-%
-%(cg alessia's box)?
-%
+%dmddn-osai
+%-coloumb
+%dmdds-osai
+%-coloumb
+
 \section{Results and Discussion}
 \section{Conclusion} 
 \section{Nomenclature} 

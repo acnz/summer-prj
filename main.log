@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.3.2)  3 AUG 2015 15:21
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.6.12)  3 AUG 2015 16:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1324,7 +1324,7 @@ LaTeX Info: Redefining \BHBI on input line 130.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-<./images/StrathLogo.png, id=76, 598.3956pt x 136.3494pt>
+<./images/StrathLogo.png, id=80, 598.3956pt x 136.3494pt>
 File: ./images/StrathLogo.png Graphic file (type png)
 
 <use ./images/StrathLogo.png>
@@ -1412,7 +1412,7 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <3.49998> not available
 (Font)              size <5> substituted on input line 238.
 
-[3] <./graphs/lj.pdf, id=236, 419.5126pt x 291.39645pt>
+[3] <./graphs/lj.pdf, id=241, 419.5126pt x 291.39645pt>
 File: ./graphs/lj.pdf Graphic file (type pdf)
  <use ./graphs/lj.pdf>
 Package pdftex.def Info: ./graphs/lj.pdf used on input line 296.
@@ -1421,7 +1421,7 @@ Package pdftex.def Info: ./graphs/lj.pdf used on input line 296.
 
 LaTeX Warning: Citation `ewald' undefined on input line 310.
 
-[4] <./images/magic.png, id=255, 1678.27pt x 431.6125pt>
+[4] <./images/magic.png, id=260, 1678.27pt x 431.6125pt>
 File: ./images/magic.png Graphic file (type png)
 
 <use ./images/magic.png>
@@ -1440,7 +1440,7 @@ l.324
                                                   \fi \fi 
 l.324 
        <./graphs/lj.pdf> <./images/magic.png>]
-<./images/magiccore.pdf, id=307, 187.70125pt x 283.0575pt>
+<./images/magiccore.pdf, id=313, 187.70125pt x 283.0575pt>
 File: ./images/magiccore.pdf Graphic file (type pdf)
 
 <use ./images/magiccore.pdf>
@@ -1467,7 +1467,7 @@ Package microtype Info: Loading generic settings for font family
 
 LaTeX Warning: Citation `hheads' undefined on input line 372.
 
-<./images/molsAA.png, id=354, 1367.1075pt x 1108.14pt>
+<./images/molsAA.png, id=359, 1367.1075pt x 1108.14pt>
 File: ./images/molsAA.png Graphic file (type png)
 
 <use ./images/molsAA.png>
@@ -1511,6 +1511,15 @@ LaTeX Warning: Citation `vtstat' undefined on input line 425.
 
 LaTeX Warning: Citation `berend' undefined on input line 425.
 
+
+LaTeX Warning: Citation `nose' undefined on input line 427.
+
+
+LaTeX Warning: Citation `hoover' undefined on input line 427.
+
+
+LaTeX Warning: Citation `prbstat' undefined on input line 427.
+
 (./main.bbl
 LaTeX Font Info:    Try loading font information for T1+lmtt on input line 33.
  (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
@@ -1521,19 +1530,19 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
  [10]) [11]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 531.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 524.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.531 \end{document}
+l.524 \end{document}
                      [1]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 531.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 524.
  (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 531.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 531.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 524.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 524.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 33D95EDCFA95805D24A3AD949356EAFC;1083.
+(rerunfilecheck)             Checksum: 57495569C562006EAB6A7723CCF8B0A3;1163.
 
 
 LaTeX Font Warning: Size substitutions with differences
@@ -1542,18 +1551,27 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 531.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 524.
  ) 
 Here is how much of TeX's memory you used:
- 18669 strings out of 493304
- 316919 string characters out of 6139872
- 434696 words of memory out of 5000000
- 21519 multiletter control sequences out of 15000+600000
- 136947 words of font info for 170 fonts, out of 8000000 for 9000
+ 18686 strings out of 493304
+ 317089 string characters out of 6139871
+ 436696 words of memory out of 5000000
+ 21526 multiletter control sequences out of 15000+600000
+ 137196 words of font info for 173 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 45i,15n,43p,10461b,476s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{cite.berend} has been referenced but does not exi
-st, replaced by a fixed one
+ 45i,15n,43p,10461b,474s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{cite.prbstat} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.hoover} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.nose} has been referenced but does not exist, 
+replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.berend} has been referenced but does not exist
+, replaced by a fixed one
 
 pdfTeX warning (dest): name{cite.vtstat} has been referenced but does not exist
 , replaced by a fixed one
@@ -1586,10 +1604,10 @@ b></usr/share/texmf/fonts/type1/public/lm/lmss8.pfb></usr/share/texmf/fonts/typ
 e1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy7.pfb></usr
 /share/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/share/texlive/texmf-dist/fo
 nts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on main.pdf (16 pages, 1127377 bytes).
+Output written on main.pdf (16 pages, 1128520 bytes).
 PDF statistics:
- 531 PDF objects out of 1000 (max. 8388607)
- 455 compressed objects within 5 object streams
- 87 named destinations out of 1000 (max. 500000)
- 36522 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 546 PDF objects out of 1000 (max. 8388607)
+ 470 compressed objects within 5 object streams
+ 91 named destinations out of 1000 (max. 500000)
+ 36530 words of extra memory for PDF output out of 42996 (max. 10000000)
 
