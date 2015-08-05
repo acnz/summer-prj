@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.6.12)  3 AUG 2015 16:46
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.3.2)  3 AUG 2015 22:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1555,12 +1555,12 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 524.
  ) 
 Here is how much of TeX's memory you used:
  18686 strings out of 493304
- 317089 string characters out of 6139871
+ 317089 string characters out of 6139872
  436696 words of memory out of 5000000
  21526 multiletter control sequences out of 15000+600000
  137196 words of font info for 173 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 45i,15n,43p,10461b,474s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 45i,15n,43p,10461b,473s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{cite.prbstat} has been referenced but does not ex
 ist, replaced by a fixed one
 
@@ -1604,7 +1604,7 @@ b></usr/share/texmf/fonts/type1/public/lm/lmss8.pfb></usr/share/texmf/fonts/typ
 e1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy7.pfb></usr
 /share/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/share/texlive/texmf-dist/fo
 nts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on main.pdf (16 pages, 1128520 bytes).
+Output written on main.pdf (16 pages, 1128538 bytes).
 PDF statistics:
  546 PDF objects out of 1000 (max. 8388607)
  470 compressed objects within 5 object streams
