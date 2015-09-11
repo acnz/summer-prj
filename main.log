@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.3.2)  8 AUG 2015 13:01
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.3.2)  10 SEP 2015 01:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1324,7 +1324,7 @@ LaTeX Info: Redefining \BHBI on input line 130.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-<./images/StrathLogo.png, id=80, 598.3956pt x 136.3494pt>
+<./images/StrathLogo.png, id=112, 598.3956pt x 136.3494pt>
 File: ./images/StrathLogo.png Graphic file (type png)
 
 <use ./images/StrathLogo.png>
@@ -1393,9 +1393,6 @@ l.130 \newpage
 
  [2] [3]
 
-LaTeX Warning: Citation `sba' undefined on input line 171.
-
-
 LaTeX Warning: Citation `myproj' undefined on input line 187.
 
 [1] [2]
@@ -1412,16 +1409,13 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <3.49998> not available
 (Font)              size <5> substituted on input line 238.
 
-[3] <./graphs/lj.pdf, id=241, 419.5126pt x 291.39645pt>
+[3] <./graphs/lj.pdf, id=281, 419.5126pt x 291.39645pt>
 File: ./graphs/lj.pdf Graphic file (type pdf)
  <use ./graphs/lj.pdf>
 Package pdftex.def Info: ./graphs/lj.pdf used on input line 296.
 (pdftex.def)             Requested size: 264.61333pt x 183.80304pt.
 
-
-LaTeX Warning: Citation `ewald' undefined on input line 310.
-
-[4] <./images/magic.png, id=260, 1678.27pt x 431.6125pt>
+[4] <./images/magic.png, id=300, 1678.27pt x 431.6125pt>
 File: ./images/magic.png Graphic file (type png)
 
 <use ./images/magic.png>
@@ -1440,7 +1434,7 @@ l.324
                                                   \fi \fi 
 l.324 
        <./graphs/lj.pdf> <./images/magic.png>]
-<./images/magiccore.pdf, id=313, 187.70125pt x 283.0575pt>
+<./images/magiccore.pdf, id=354, 187.70125pt x 283.0575pt>
 File: ./images/magiccore.pdf Graphic file (type pdf)
 
 <use ./images/magiccore.pdf>
@@ -1467,7 +1461,7 @@ Package microtype Info: Loading generic settings for font family
 
 LaTeX Warning: Citation `hheads' undefined on input line 372.
 
-<./images/molsAA.png, id=359, 1367.1075pt x 1108.14pt>
+<./images/molsAA.png, id=400, 1367.1075pt x 1108.14pt>
 File: ./images/molsAA.png Graphic file (type png)
 
 <use ./images/molsAA.png>
@@ -1481,45 +1475,235 @@ Package pdftex.def Info: ./images/molsAA.png used on input line 376.
 l.387 
        <./images/molsAA.png>]
 
-LaTeX Warning: Reference `sec:atmbxdiss' on page 9 undefined on input line 390.
+LaTeX Warning: Command \r invalid in math mode on input line 421.
 
 
-LaTeX Font Info:    Try loading font information for TS1+lmr on input line 403.
-
-(/usr/share/texmf/tex/latex/lm/ts1lmr.fd
-File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-
-LaTeX Warning: Command \r invalid in math mode on input line 423.
-
-
-LaTeX Warning: Command \r invalid in math mode on input line 423.
-
-
-LaTeX Warning: Reference `expMAGIC' on page 9 undefined on input line 423.
+LaTeX Warning: Command \r invalid in math mode on input line 421.
 
 [9pdfTeX warning (ext4): destination with the same identifier (name{table.1}) h
 as been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.424 
-      ]
+l.422 
+      ] <./images/dmddscg.png, id=459, 1656.1875pt x 521.95pt>
+File: ./images/dmddscg.png Graphic file (type png)
 
-LaTeX Warning: Citation `vtstat' undefined on input line 425.
+<use ./images/dmddscg.png>
+Package pdftex.def Info: ./images/dmddscg.png used on input line 433.
+(pdftex.def)             Requested size: 441.01773pt x 138.98509pt.
+
+<./images/dmddncg.png, id=460, 1656.1875pt x 521.95pt>
+File: ./images/dmddncg.png Graphic file (type png)
+
+<use ./images/dmddncg.png>
+Package pdftex.def Info: ./images/dmddncg.png used on input line 440.
+(pdftex.def)             Requested size: 441.01773pt x 138.98509pt.
+ [10]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [11pdfTeX warning (ext4): destination with the same identifier (name{figure.5}
+) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.491 \end{equation}
+                    pdfTeX warning (ext4): destination with the same identifier
+ (name{figure.6}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.491 \end{equation}
+                     <./images/dmddscg.png> <./images/dmddncg.png>]
+
+LaTeX Warning: Reference `Fig:atombox1' on page 12 undefined on input line 499.
 
 
-LaTeX Warning: Citation `berend' undefined on input line 425.
+
+LaTeX Warning: Reference `Fig:rdfAA1' on page 12 undefined on input line 499.
+
+[12pdfTeX warning (ext4): destination with the same identifier (name{table.2}) 
+has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.500 
+      ] <./images/aa1.png, id=500, 556.479pt x 220.1826pt>
+File: ./images/aa1.png Graphic file (type png)
+
+<use ./images/aa1.png>
+Package pdftex.def Info: ./images/aa1.png used on input line 503.
+(pdftex.def)             Requested size: 441.01773pt x 174.50005pt.
 
 
-LaTeX Warning: Citation `nose' undefined on input line 427.
+LaTeX Warning: Reference `Fig:atombox2' on page 13 undefined on input line 509.
 
 
-LaTeX Warning: Citation `hoover' undefined on input line 427.
+
+LaTeX Warning: Reference `Fig:rdfAA2' on page 13 undefined on input line 509.
+
+<./images/aa2.png, id=501, 479.8728pt x 236.8047pt>
+File: ./images/aa2.png Graphic file (type png)
+ <use ./images/aa2.png>
+Package pdftex.def Info: ./images/aa2.png used on input line 513.
+(pdftex.def)             Requested size: 441.01773pt x 217.64253pt.
 
 
-LaTeX Warning: Citation `prbstat' undefined on input line 427.
+LaTeX Warning: Reference `Fig:atombox3' on page 13 undefined on input line 519.
 
+
+
+LaTeX Warning: Reference `Fig:rdfAA3' on page 13 undefined on input line 519.
+
+[13pdfTeX warning (ext4): destination with the same identifier (name{figure.7})
+ has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.520 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+8}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.520 
+       <./images/aa1.png> <./images/aa2.png>]
+<./images/aa3.png, id=514, 511.4307pt x 238.7319pt>
+File: ./images/aa3.png Graphic file (type png)
+ <use ./images/aa3.png>
+Package pdftex.def Info: ./images/aa3.png used on input line 523.
+(pdftex.def)             Requested size: 441.01773pt x 205.87004pt.
+
+[14pdfTeX warning (ext4): destination with the same identifier (name{figure.9})
+ has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.535 
+       <./images/aa3.png>]
+<./graphs/Conv45nns.png, id=522, 1189.8051pt x 729.4452pt>
+File: ./graphs/Conv45nns.png Graphic file (type png)
+
+<use ./graphs/Conv45nns.png>
+Package pdftex.def Info: ./graphs/Conv45nns.png used on input line 541.
+(pdftex.def)             Requested size: 352.81552pt x 216.2975pt.
+
+<./graphs/Conv45sC.png, id=523, 1188.3597pt x 729.4452pt>
+File: ./graphs/Conv45sC.png Graphic file (type png)
+
+<use ./graphs/Conv45sC.png>
+Package pdftex.def Info: ./graphs/Conv45sC.png used on input line 551.
+(pdftex.def)             Requested size: 352.81552pt x 216.56464pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [15pdfTeX warning (ext4): destination with the same identifier (name{figure.10
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.556 
+       <./graphs/Conv45nns.png>]
+<./graphs/Conv100sC.png, id=531, 1188.6006pt x 729.4452pt>
+File: ./graphs/Conv100sC.png Graphic file (type png)
+
+<use ./graphs/Conv100sC.png>
+Package pdftex.def Info: ./graphs/Conv100sC.png used on input line 559.
+(pdftex.def)             Requested size: 352.81552pt x 216.52011pt.
+
+<./graphs/Conv45sN.png, id=532, 1189.8051pt x 729.4452pt>
+File: ./graphs/Conv45sN.png Graphic file (type png)
+
+<use ./graphs/Conv45sN.png>
+Package pdftex.def Info: ./graphs/Conv45sN.png used on input line 569.
+(pdftex.def)             Requested size: 352.81552pt x 216.2975pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [16pdfTeX warning (ext4): destination with the same identifier (name{figure.11
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.574 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+12}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.574 
+       <./graphs/Conv45sC.png> <./graphs/Conv100sC.png>]
+<./graphs/Conv100sN.png, id=541, 1188.6006pt x 729.4452pt>
+File: ./graphs/Conv100sN.png Graphic file (type png)
+
+<use ./graphs/Conv100sN.png>
+Package pdftex.def Info: ./graphs/Conv100sN.png used on input line 577.
+(pdftex.def)             Requested size: 352.81552pt x 216.52011pt.
+
+<./graphs/Conv30n.png, id=542, 1190.046pt x 729.4452pt>
+File: ./graphs/Conv30n.png Graphic file (type png)
+
+<use ./graphs/Conv30n.png>
+Package pdftex.def Info: ./graphs/Conv30n.png used on input line 586.
+(pdftex.def)             Requested size: 352.81552pt x 216.25299pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [17pdfTeX warning (ext4): destination with the same identifier (name{figure.13
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.591 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+14}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.591 
+       <./graphs/Conv45sN.png> <./graphs/Conv100sN.png>]
+<./graphs/Conv100n.png, id=551, 1311.2187pt x 813.0375pt>
+File: ./graphs/Conv100n.png Graphic file (type png)
+
+<use ./graphs/Conv100n.png>
+Package pdftex.def Info: ./graphs/Conv100n.png used on input line 594.
+(pdftex.def)             Requested size: 352.81552pt x 218.7663pt.
+ [18pdfTeX warning (ext4): destination with the same identifier (name{figure.15
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.603 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+16}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.603 
+       <./graphs/Conv30n.png> <./graphs/Conv100n.png>]
+<./graphs/NNCha.png, id=561, 909.6384pt x 453.6147pt>
+File: ./graphs/NNCha.png Graphic file (type png)
+ <use ./graphs/NNCha.png>
+Package pdftex.def Info: ./graphs/NNCha.png used on input line 613.
+(pdftex.def)             Requested size: 441.01773pt x 219.92673pt.
+
+[19pdfTeX warning (ext4): destination with the same identifier (name{figure.17}
+) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.620 
+       <./graphs/NNCha.png>]
+<./images/boxes1000.png, id=570, 437.7153pt x 507.5763pt>
+File: ./images/boxes1000.png Graphic file (type png)
+
+<use ./images/boxes1000.png>
+Package pdftex.def Info: ./images/boxes1000.png used on input line 625.
+(pdftex.def)             Requested size: 441.01773pt x 511.43204pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [20]
 (./main.bbl
 LaTeX Font Info:    Try loading font information for T1+lmtt on input line 33.
  (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
@@ -1529,20 +1713,29 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             `lmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [10]) [11]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 524.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [21pdfTeX warning (ext4): destination with the same identifier (name{figure.18
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.37 
+      <./images/boxes1000.png>] [22]) [23]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 715.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.524 \end{document}
+l.715 \end{document}
                      [1]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 524.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 715.
  (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 524.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 524.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 715.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 715.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 57495569C562006EAB6A7723CCF8B0A3;1163.
+(rerunfilecheck)             Checksum: 01E021C2AA55240F63634DF1962BE8E0;1814.
 
 
 LaTeX Font Warning: Size substitutions with differences
@@ -1551,63 +1744,41 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 524.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 715.
  ) 
 Here is how much of TeX's memory you used:
- 18688 strings out of 493304
- 317111 string characters out of 6139872
- 437696 words of memory out of 5000000
- 21526 multiletter control sequences out of 15000+600000
- 137279 words of font info for 174 fonts, out of 8000000 for 9000
+ 18816 strings out of 493304
+ 318920 string characters out of 6139872
+ 445405 words of memory out of 5000000
+ 21603 multiletter control sequences out of 15000+600000
+ 137820 words of font info for 182 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 45i,15n,43p,10461b,474s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{cite.prbstat} has been referenced but does not ex
-ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{cite.hoover} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{cite.nose} has been referenced but does not exist, 
-replaced by a fixed one
-
-pdfTeX warning (dest): name{cite.berend} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{cite.vtstat} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{cite.hheads} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{cite.ewald} has been referenced but does not exist,
- replaced by a fixed one
+ 45i,19n,43p,10461b,488s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{cite.hheads} has been referenced but does not exi
+st, replaced by a fixed one
 
 pdfTeX warning (dest): name{cite.myproj} has been referenced but does not exist
 , replaced by a fixed one
 
-pdfTeX warning (dest): name{cite.sba} has been referenced but does not exist, r
-eplaced by a fixed one
-
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvip
-s/lm/lm-ts1.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texm
-f/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-math
-sy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}</usr/share/texmf/fon
-ts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pf
-b></usr/share/texmf/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf/fonts/t
-ype1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></
-usr/share/texmf/fonts/type1/public/lm/lmmi7.pfb></usr/share/texmf/fonts/type1/p
-ublic/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/shar
-e/texmf/fonts/type1/public/lm/lmr5.pfb></usr/share/texmf/fonts/type1/public/lm/
-lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr9.pfb></usr/share/texmf/fon
-ts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pf
-b></usr/share/texmf/fonts/type1/public/lm/lmss8.pfb></usr/share/texmf/fonts/typ
-e1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy7.pfb></usr
-/share/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/share/texlive/texmf-dist/fo
-nts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on main.pdf (16 pages, 1128835 bytes).
+s/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/t
+exmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-m
+athit.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/
+fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmcsc1
+0.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/font
+s/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi7.pfb>
+</usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1
+/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr5.pfb></usr/sha
+re/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm
+/lmr9.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/
+fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss8.
+pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/
+type1/public/lm/lmsy7.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb></
+usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on main.pdf (28 pages, 15110995 bytes).
 PDF statistics:
- 546 PDF objects out of 1000 (max. 8388607)
- 470 compressed objects within 5 object streams
- 91 named destinations out of 1000 (max. 500000)
- 36530 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 726 PDF objects out of 1000 (max. 8388607)
+ 608 compressed objects within 7 object streams
+ 128 named destinations out of 1000 (max. 500000)
+ 36152 words of extra memory for PDF output out of 42996 (max. 10000000)
 

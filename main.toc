@@ -13,8 +13,16 @@
 \contentsline {subsection}{\numberline {5.1}Atomistic Molecular Model}{7}{subsection.5.1}
 \contentsline {subsection}{\numberline {5.2}Atomistic Simulation}{8}{subsection.5.2}
 \contentsline {subsection}{\numberline {5.3}Coarse-grained molecular Model}{10}{subsection.5.3}
-\contentsline {section}{\numberline {6}Results and Discussion}{10}{section.6}
-\contentsline {section}{\numberline {7}Conclusion}{10}{section.7}
-\contentsline {section}{\numberline {8}Nomenclature}{10}{section.8}
-\contentsline {section}{\numberline {9}References}{10}{section.9}
+\contentsline {section}{\numberline {6}Results and Discussion}{12}{section.6}
+\contentsline {subsection}{\numberline {6.1}Atomistic Simulations}{12}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}Coarse-Graining Process: Convergence Analysis}{14}{subsection.6.2}
+\contentsline {subsubsection}{\numberline {6.2.1}Pure DMDDn and water}{15}{subsubsection.6.2.1}
+\contentsline {subsubsection}{\numberline {6.2.2}DMDDs and Bromide}{16}{subsubsection.6.2.2}
+\contentsline {subsubsection}{\numberline {6.2.3}Pure DMDDs and Bromide (Integrated Potentials)}{17}{subsubsection.6.2.3}
+\contentsline {subsubsection}{\numberline {6.2.4}DMDDn and Silica}{18}{subsubsection.6.2.4}
+\contentsline {subsection}{\numberline {6.3}Charged Systems}{18}{subsection.6.3}
+\contentsline {subsection}{\numberline {6.4}Silica-Surfactant interaction}{21}{subsection.6.4}
+\contentsline {section}{\numberline {7}Conclusion}{21}{section.7}
+\contentsline {section}{\numberline {8}Nomenclature}{21}{section.8}
+\contentsline {section}{\numberline {9}References}{22}{section.9}
 \contentsline {section}{\numberline {10}Appendix}{1}{section.10}

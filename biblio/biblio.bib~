@@ -29,6 +29,33 @@ publisher={PhysMath Central},
 author={Tresset, Guillaume},
 language={English}
 }
+
+@article{sba,
+author = {Zhao, Dongyuan and Feng, Jianglin and Huo, Qisheng and Melosh, Nicholas and Fredrickson, Glenn H. and Chmelka, Bradley F. and Stucky, Galen D.}, 
+title = {Triblock Copolymer Syntheses of Mesoporous Silica with Periodic 50 to 300 Angstrom Pores},
+volume = {279}, 
+number = {5350}, 
+pages = {548-552}, 
+year = {1998}, 
+doi = {10.1126/science.279.5350.548}, 
+abstract ={Use of amphiphilic triblock copolymers to direct the organization of polymerizing silica species has resulted in the preparation of well-ordered hexagonal mesoporous silica structures (SBA-15) with uniform pore sizes up to approximately 300 angstroms. The SBA-15 materials are synthesized in acidic media to produce highly ordered, two-dimensional hexagonal (space group p6mm) silica-block copolymer mesophases. Calcination at 500°C gives porous structures with unusually large interlattice d spacings of 74.5 to 320 angstroms between the (100) planes, pore sizes from 46 to 300 angstroms, pore volume fractions up to 0.85, and silica wall thicknesses of 31 to 64 angstroms. SBA-15 can be readily prepared over a wide range of uniform pore sizes and pore wall thicknesses at low temperature (35° to 80°C), using a variety of poly(alkylene oxide) triblock copolymers and by the addition of cosolvent organic molecules. The block copolymer species can be recovered for reuse by solvent extraction with ethanol or removed by heating at 140°C for 3 hours, in both cases, yielding a product that is thermally stable in boiling water.}, 
+URL = {http://www.sciencemag.org/content/279/5350/548.abstract}, 
+eprint = {http://www.sciencemag.org/content/279/5350/548.full.pdf}, 
+journal = {Science} 
+}
+
+@article{ewald,
+   author = "Darden, Tom and York, Darrin and Pedersen, Lee",
+   title = "Particle mesh Ewald: An Nlog(N) method for Ewald sums in large systems",
+   journal = "The Journal of Chemical Physics",
+   year = "1993",
+   volume = "98",
+   number = "12", 
+   pages = "10089-10092",
+   url = "http://scitation.aip.org/content/aip/journal/jcp/98/12/10.1063/1.464397",
+   doi = "http://dx.doi.org/10.1063/1.464397" 
+}
+
 ﻿@article {dmpc,
 author = {Mirzoev, Alexander and Lyubartsev, Alexander P.},
 title = {Systematic implicit solvent coarse graining of dimyristoylphosphatidylcholine lipids},
@@ -298,6 +325,21 @@ year = {1996} }
    pages = "-",
    url = "http://scitation.aip.org/content/aip/journal/jcp/137/18/10.1063/1.4766352",
    doi = "http://dx.doi.org/10.1063/1.4766352" 
+}
+
+﻿@article {dynph,
+author = {Lee, Michael S. and Salsbury, Freddie R. and Brooks, Charles L.},
+title = {Constant-pH molecular dynamics using continuous titration coordinates},
+journal = {Proteins: Structure, Function, and Bioinformatics},
+volume = {56},
+number = {4},
+publisher = {Wiley Subscription Services, Inc., A Wiley Company},
+issn = {1097-0134},
+url = {http://dx.doi.org/10.1002/prot.20128},
+doi = {10.1002/prot.20128},
+pages = {738--752},
+keywords = {pKa, proteins, ovomucoid, BPTI, RNase A, conformational change, free energy},
+year = {2004},
 }
 
 @article{someone,

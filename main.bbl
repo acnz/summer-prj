@@ -36,6 +36,147 @@ Arnarez, C.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Berendsen%
+, Postma%
+, van Gunsteren%
+, DiNola%
+\BCBL {}\ \BBA {} Haak%
+}{%
+Berendsen%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {1984}}%
+}]{%
+berend}
+\APACinsertmetastar {%
+berend}%
+\begin{APACrefauthors}%
+Berendsen, H\BPBI J\BPBI C.%
+, Postma, J\BPBI P\BPBI M.%
+, van Gunsteren, W\BPBI F.%
+, DiNola, A.%
+\BCBL {}\ \BBA {} Haak, J\BPBI R.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1984}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Molecular dynamics with coupling to an external bath}
+  {Molecular dynamics with coupling to an external bath}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{The Journal of Chemical Physics}{81}{8}{3684-3690}.
+\newblock
+\begin{APACrefURL}
+  \url{http://scitation.aip.org/content/aip/journal/jcp/81/8/10.1063/1.448118}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{http://dx.doi.org/10.1063/1.448118} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Bussi%
+, Donadio%
+\BCBL {}\ \BBA {} Parrinello%
+}{%
+Bussi%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2007}}%
+}]{%
+vtstat}
+\APACinsertmetastar {%
+vtstat}%
+\begin{APACrefauthors}%
+Bussi, G.%
+, Donadio, D.%
+\BCBL {}\ \BBA {} Parrinello, M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2007}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Canonical sampling through velocity rescaling}
+  {Canonical sampling through velocity rescaling}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{The Journal of Chemical Physics}{126}{1}{-}.
+\newblock
+\begin{APACrefURL}
+  \url{http://scitation.aip.org/content/aip/journal/jcp/126/1/10.1063/1.2408420}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{http://dx.doi.org/10.1063/1.2408420} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Darden%
+, York%
+\BCBL {}\ \BBA {} Pedersen%
+}{%
+Darden%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {1993}}%
+}]{%
+ewald}
+\APACinsertmetastar {%
+ewald}%
+\begin{APACrefauthors}%
+Darden, T.%
+, York, D.%
+\BCBL {}\ \BBA {} Pedersen, L.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1993}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Particle mesh Ewald: An Nlog(N) method for Ewald sums in
+  large systems} {Particle mesh ewald: An nlog(n) method for ewald sums in
+  large systems}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{The Journal of Chemical Physics}{98}{12}{10089-10092}.
+\newblock
+\begin{APACrefURL}
+  \url{http://scitation.aip.org/content/aip/journal/jcp/98/12/10.1063/1.464397}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{http://dx.doi.org/10.1063/1.464397} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Fernández%
+, Mulev%
+, Goodwin%
+\BCBL {}\ \BBA {} Sengers%
+}{%
+Fernández%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {1995}}%
+}]{%
+dconst}
+\APACinsertmetastar {%
+dconst}%
+\begin{APACrefauthors}%
+Fernández, D\BPBI P.%
+, Mulev, Y.%
+, Goodwin, A\BPBI R\BPBI H.%
+\BCBL {}\ \BBA {} Sengers, J\BPBI M\BPBI H\BPBI L.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1995}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {A Database for the Static Dielectric Constant of Water
+  and Steam} {A database for the static dielectric constant of water and
+  steam}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Physical and Chemical Reference
+  Data}{24}{1}{33-70}.
+\newblock
+\begin{APACrefURL}
+  \url{http://scitation.aip.org/content/aip/journal/jpcrd/24/1/10.1063/1.555977}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{http://dx.doi.org/10.1063/1.555977} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Frenkel%
 \ \BBA {} Smit%
 }{%
@@ -60,6 +201,35 @@ Frenkel, D.%
   applications}.
 \newblock
 \APACaddressPublisher{}{Elsevier Science}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Hoover%
+}{%
+Hoover%
+}{%
+{\protect \APACyear {1985}}%
+}]{%
+hoover}
+\APACinsertmetastar {%
+hoover}%
+\begin{APACrefauthors}%
+Hoover, W\BPBI G.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1985}{Mar}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Canonical dynamics: Equilibrium phase-space
+  distributions} {Canonical dynamics: Equilibrium phase-space
+  distributions}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Phys. Rev. A}{31}{}{1695--1697}.
+\newblock
+\begin{APACrefURL} \url{http://link.aps.org/doi/10.1103/PhysRevA.31.1695}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1103/PhysRevA.31.1695} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -393,6 +563,68 @@ Moore, T\BPBI C.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Nosé%
+}{%
+Nosé%
+}{%
+{\protect \APACyear {1984}}%
+}]{%
+nose}
+\APACinsertmetastar {%
+nose}%
+\begin{APACrefauthors}%
+Nosé, S.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1984}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {A molecular dynamics method for simulations in the
+  canonical ensemble} {A molecular dynamics method for simulations in the
+  canonical ensemble}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Molecular Physics}{52}{2}{255-268}.
+\newblock
+\begin{APACrefURL} \url{http://dx.doi.org/10.1080/00268978400101201}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1080/00268978400101201} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Parrinello%
+\ \BBA {} Rahman%
+}{%
+Parrinello%
+\ \BBA {} Rahman%
+}{%
+{\protect \APACyear {1981}}%
+}]{%
+prbstat}
+\APACinsertmetastar {%
+prbstat}%
+\begin{APACrefauthors}%
+Parrinello, M.%
+\BCBT {}\ \BBA {} Rahman, A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1981}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Polymorphic transitions in single crystals: A new
+  molecular dynamics method} {Polymorphic transitions in single crystals: A new
+  molecular dynamics method}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Applied Physics}{52}{12}{7182-7190}.
+\newblock
+\begin{APACrefURL}
+  \url{http://scitation.aip.org/content/aip/journal/jap/52/12/10.1063/1.328693}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{http://dx.doi.org/10.1063/1.328693} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Patwardhan%
 }{%
 Patwardhan%
@@ -671,6 +903,42 @@ Wallace, J\BPBI A.%
   \end{APACrefURL}
 \newblock
 \begin{APACrefDOI} \doi{http://dx.doi.org/10.1063/1.4766352} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Zhao%
+\ \protect \BOthers {.}}{%
+Zhao%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {1998}}%
+}]{%
+sba}
+\APACinsertmetastar {%
+sba}%
+\begin{APACrefauthors}%
+Zhao, D.%
+, Feng, J.%
+, Huo, Q.%
+, Melosh, N.%
+, Fredrickson, G\BPBI H.%
+, Chmelka, B\BPBI F.%
+\BCBL {}\ \BBA {} Stucky, G\BPBI D.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1998}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Triblock Copolymer Syntheses of Mesoporous Silica with
+  Periodic 50 to 300 Angstrom Pores} {Triblock copolymer syntheses of
+  mesoporous silica with periodic 50 to 300 angstrom pores}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Science}{279}{5350}{548-552}.
+\newblock
+\begin{APACrefURL}
+  \url{http://www.sciencemag.org/content/279/5350/548.abstract}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1126/science.279.5350.548} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \end{thebibliography}
