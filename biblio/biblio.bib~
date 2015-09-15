@@ -56,6 +56,90 @@ journal = {Science}
    doi = "http://dx.doi.org/10.1063/1.464397" 
 }
 
+@article{vtstat,
+   author = "Bussi, Giovanni and Donadio, Davide and Parrinello, Michele",
+   title = "Canonical sampling through velocity rescaling",
+   journal = "The Journal of Chemical Physics",
+   year = "2007",
+   volume = "126",
+   number = "1",
+   pages = "-",
+   url = "http://scitation.aip.org/content/aip/journal/jcp/126/1/10.1063/1.2408420",
+   doi = "http://dx.doi.org/10.1063/1.2408420" 
+}
+
+@article{prbstat,
+   author = "Parrinello, M. and Rahman, A.",
+   title = "Polymorphic transitions in single crystals: A new molecular dynamics method",
+   journal = "Journal of Applied Physics",
+   year = "1981",
+   volume = "52",
+   number = "12", 
+   pages = "7182-7190",
+   url = "http://scitation.aip.org/content/aip/journal/jap/52/12/10.1063/1.328693",
+   doi = "http://dx.doi.org/10.1063/1.328693" 
+}
+
+@article{berend,
+   author = "Berendsen, H. J. C. and Postma, J. P. M. and van Gunsteren, W. F. and DiNola, A. and Haak, J. R.",
+   title = "Molecular dynamics with coupling to an external bath",
+   journal = "The Journal of Chemical Physics",
+   year = "1984",
+   volume = "81",
+   number = "8", 
+   pages = "3684-3690",
+   url = "http://scitation.aip.org/content/aip/journal/jcp/81/8/10.1063/1.448118",
+   doi = "http://dx.doi.org/10.1063/1.448118" 
+}
+
+@article{dconst,
+   author = "Fernández, D. P. and Mulev, Y. and Goodwin, A. R. H. and Sengers, J. M. H. Levelt",
+   title = "A Database for the Static Dielectric Constant of Water and Steam",
+   journal = "Journal of Physical and Chemical Reference Data",
+   year = "1995",
+   volume = "24",
+   number = "1", 
+   pages = "33-70",
+   url = "http://scitation.aip.org/content/aip/journal/jpcrd/24/1/10.1063/1.555977",
+   doi = "http://dx.doi.org/10.1063/1.555977" 
+}
+
+@article{nose,
+author = { Shūichi   Nosé },
+title = {A molecular dynamics method for simulations in the canonical ensemble},
+journal = {Molecular Physics},
+volume = {52},
+number = {2},
+pages = {255-268},
+year = {1984},
+doi = {10.1080/00268978400101201},
+
+URL = { 
+        http://dx.doi.org/10.1080/00268978400101201
+    
+},
+eprint = { 
+        http://dx.doi.org/10.1080/00268978400101201
+    
+}
+
+}
+
+@article{hoover,
+  title = {Canonical dynamics: Equilibrium phase-space distributions},
+  author = {Hoover, William G.},
+  journal = {Phys. Rev. A},
+  volume = {31},
+  issue = {3},
+  pages = {1695--1697},
+  numpages = {0},
+  year = {1985},
+  month = {Mar},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevA.31.1695},
+  url = {http://link.aps.org/doi/10.1103/PhysRevA.31.1695}
+}
+
 ﻿@article {dmpc,
 author = {Mirzoev, Alexander and Lyubartsev, Alexander P.},
 title = {Systematic implicit solvent coarse graining of dimyristoylphosphatidylcholine lipids},

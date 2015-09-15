@@ -125,7 +125,7 @@ Carlos F. \textsc{Rangel}
 \addtocontents{toc}{~\hfill\textbf{Page}\par}
 \section{Summary}
 \setcounter{page}{1}
-...
+This projects presented the design of a Coarse-grain model by using MagiC software package. MagiC is a  systemic tool to develop Coarse-grain models based on an atomistic simulation by applying two techniques: Iterative Boltzmann Inversion and Inverse Monte Carlo. Using GROMACS software package, several All-atoms simulations were run in order to create multiple Coarse-graing models, using different molecular types and box sizes. The characteristics of Inversion process for each model were described highlighting common points.  Afterwards, up-scaled simulations of these models were compared and evaluated reviling interesting features of self-assembly process of a bolaamphiphilic surfactant called 1,12-diaminododecane (DMDD). Moreover, the behaviour of this coarse-grain model in presence of charged particles was analysed  by comparing multiple aproaches for this iterations. Finally, an initial coarse-grain model for silica-surfactant was develop.  All the work done created a solid basis to future studies and further improvements.
 \vfill
 \newpage
 
@@ -139,7 +139,8 @@ Carlos F. \textsc{Rangel}
 
 \section{Acknowledgements}
 
-\textit{...}
+\textit{I would like to express my sincere gratitude to my three supervisors: Miguel Jorge, Alessia Centi and Carlos Rangel for providing me an outstanding support throughout the whole project and for introducing me to the adventurous field of Molecular Dynamics and academic research. A special thanks to Alessia who kindly helped me with interesting concepts and shared fundamental informations from her current works, by this means enabling the realization of this project.
+Last but not least, I would like to thank my fellow friends and flat-mates who always encouraged me to keep writing, with special thanks to João Luís not only for the great cooperative work during GROMACS learning, but also with the text revisions.}
 
 \vfill
 \newpage
@@ -496,33 +497,57 @@ where $N$ is number of molecule and $L$ is the edge side. Therefore, every coars
 \label{sec:atmbxdiss}
 The first point of interest for this project are the structures observed in the atomistic simulations. Since there are three distinct types of systems under analysis, the main objective is to compare the self-assemble structures in all cases, making an qualitative evaluation by observing the simulation boxes and as well as a quantitative evaluation by comparing the RDFs of each system. However, before entering in the analysis itself it is important to discuss the reason for the creation of each simulation box. The first highlight topic is the two different categories of simulation box the short ranged and the long ranged. Theoretically, the only box type necessary to derive potentials for coarse-grain models using MagiC is the one with the biggest box size, because it will include considerably more information regarding the self-assembled structures. Nevertheless, it is observable that the larger the reference system the harder it becomes to achieve a great convergence value using MagiC methodology, because it requires a great number of Monte Carlo simulations. In complex systems, a high number of Monte Carlo steps in the early stages of inversion using Boltzmann Inversion rarely produces initial potentials that will result in convergent behaviour during Inverse Monte Carlo procedure. For this reason the use of Short-range references box was introduced, since simpler systems can reach convergence very fast and the final potentials generated can be used as an approximation for initial potentials for the Long-range boxes.
 
-As it is possible to see in Figure (\ref{Fig:atombox1}), the first type of box that contains only DMDDn is an attempt to study the layer formation characteristic of this type of surfactant, in which the concentration was fixed for both, but the Short-range box contains a single periodic layer while the Long-range contains a double-layer periodic structure. Another characteristic of the system is the Radial Distribution Function. The RDF of N-N interactions are a great representatives of the system because the N atoms, which are the polar heads, can provide informations about the position of each molecule in relation their neighbours. In this case, as it can be seen in Figure (\ref{Fig:rdfAA1}), the RDFs of both boxes are similar since the aggregation phenomena inquires that proximity between polar and apolar parts, remains at a distance where free energy is the lowest. The different values to the peaks, does not means that there are more N heads within a given radius. This value varies according to the bulk density of the box because the RDF values are normalized, that means a higher concentration implies in a higher number of atoms within a given range  therefore, a lower normalized peak. The only difference appears in the second peak due to the proximity of the double-layers, and this difference may impact the MagiC process since it is based in the reference RDF.
+As it is possible to see in Figure (\ref{Fig:aa1}), the first type of box that contains only DMDDn is an attempt to study the layer formation characteristic of this type of surfactant, in which the concentration was fixed for both, but the Short-range box contains a single periodic layer while the Long-range contains a double-layer periodic structure. Another characteristic of the system is the Radial Distribution Function. The RDF of N-N interactions are a great representatives of the system because the N atoms, which are the polar heads, can provide informations about the position of each molecule in relation their neighbours. In this case, as it can be seen in Figure (\ref{Fig:rdfAA1}), the RDFs of both boxes are similar since the aggregation phenomena inquires that proximity between polar and apolar parts, remains at a distance where free energy is the lowest. The different values to the peaks, does not means that there are more N heads within a given radius. This value varies according to the bulk density of the box because the RDF values are normalized, that means a higher concentration implies in a higher number of atoms within a given range  therefore, a lower normalized peak. The only difference appears in the second peak due to the proximity of the double-layers, and this difference may impact the MagiC process since it is based in the reference RDF.
 
 \begin{figure}[H]
   \begin{center}
 	\includegraphics[width=1 \textwidth]{./images/aa1}
-	\caption{Work in Progress}
+	\caption{Snapshot of simulation boxes with periodic boundaries. A) Short-Range Box, B) Long-Range Box. Nitrogen atoms are represented in green, Carbon in black, Hydrogen in gray and water molecules were removed to improve visualization. }
 	\label{Fig:aa1}
   \end{center}
 \end{figure}
 
-The other type of system is the DMDDs with Bromide counter-ions which introduced two new features to the reference system: the addition of electrostatic charges and the use of multiple molecular types. As demonstrated in Figure (\ref{Fig:atombox2}), the DMDDs self organize in a slightly different structure when compared to the DMDDn, presenting alternated head position in which the charged polar head is more exposed to the ion-solvent solution and the non-charged head right below alternation positions. Comparing the RDFs between Ni-Ni (Charged) heads and Nn-Nn (Neutral)  heads in Figure (\ref{Fig:rdfAA2}), it is possible to see that the distance is between heads is similar in both cases. Furthermore, it is possible to see that this type of layer preferentially remains positioned diagonally in the periodic box. Implications of the coarse-graining procedure of this type of system will be more detailed in further sections.
+\begin{figure}[H]
+  \begin{center}
+	\includegraphics[width=1 \textwidth]{./graphs/rdfaa1}
+	\caption{Radial distribution function representing DMDDn system}
+	\label{Fig:rdfAA1}
+  \end{center}
+\end{figure}
+
+The other type of system is the DMDDs with Bromide counter-ions which introduced two new features to the reference system: the addition of electrostatic charges and the use of multiple molecular types. As demonstrated in Figure (\ref{Fig:aa2}), the DMDDs self organize in a slightly different structure when compared to the DMDDn, presenting alternated head position in which the charged polar head is more exposed to the ion-solvent solution and the non-charged head right below alternating positions. Comparing the RDFs between Ni-Ni (Charged) heads and Nn-Nn (Neutral)  heads in Figure (\ref{Fig:rdfAA2}), it is possible to see that the distance is between heads is almost similar for both cases but as the ranges increases the neutral heads seem to be more organized while the ionic heads are spreader. Furthermore, this type of layer preferentially remains positioned diagonally in the periodic box. Implications of the coarse-graining procedure of this type of system will be more detailed in further sections.
 
 \begin{figure}[H]
   \begin{center}
 	\includegraphics[width=1 \textwidth]{./images/aa2}
-	\caption{Work in Progress}
+	\caption{Snapshot of simulation boxes with periodic boundaries. A) Short-Range Box, B) Long-Range Box. Neutral Nitrogen atoms are represented in green, Ionic Nitrogen in purple, Carbon and Hydrogen in transparent black, Bromide ions in orange and water molecules were removed to improve visualization. }
 	\label{Fig:aa2}
   \end{center}
 \end{figure}
 
-The last type of systems under analysis are the ones with OSAi, DMDDn and Sodium counter-ion, since they are much more complex systems the simulation boxes took longer to equilibrate in a stable configuration. According to \citeA{msuv} the expected structure in this case is small surfactant layers surrounded by polymerized silica, however as soon as there is no silica oligomers in the model chosen for simulation it is expected to observe a similar but not identical behaviour. As it can be seen in Figure (\ref{Fig:atombox3}), the layer formation phenomenon still observable, but without a regular shape and periodicity that occurs when there is only DMDDn surfactant. Another important factor that becomes clear in Figure (\ref{Fig:rdfAA3}) when measuring the RDF for Si-Si and Si-Na atoms, it that it seems the silica phase self-organizes in a rigid structure similar to ion-ion crystal, which may be due to the fact that Sodium interacts too strongly with ionic silica and the use of a more inert counter-ion such as tetramethylammonium (TMA) would be more suitable \cite{mjsilica}.
+\begin{figure}[H]
+  \begin{center}
+	\includegraphics[width=1 \textwidth]{./graphs/rdfaa2}
+	\caption{Radial distribution function representing DMDDs system}
+	\label{Fig:rdfAA2}
+  \end{center}
+\end{figure}
+
+The last type of systems under analysis are the ones with OSAi, DMDDn and Sodium counter-ion, since they are much more complex systems the simulation boxes took longer to equilibrate in a stable configuration. According to \citeA{msuv} the expected structure in this case is small surfactant layers surrounded by polymerized silica, however as soon as there is no silica oligomers in the model chosen for simulation it is expected to observe a similar but not identical behaviour. As it can be seen in Figure (\ref{Fig:aa3}), the layer formation phenomenon still observable, but without a regular shape and periodicity that occurs when there is only DMDDn surfactant. Another important factor that becomes clear in Figure (\ref{Fig:rdfAA3}) when measuring the RDF for Si-Si and Si-Na atoms, it that it seems the silica phase self-organizes in a rigid structure similar to ion-ion crystal, which may be due to the fact that Sodium interacts too strongly with ionic silica and the use of a more inert counter-ion such as tetramethylammonium (TMA) would be more suitable \cite{mjsilica}.
 
 \begin{figure}[H]
   \begin{center}
 	\includegraphics[width=1 \textwidth]{./images/aa3}
-	\caption{Work in Progress}
+	\caption{Snapshot of simulation boxes with periodic replicas, the original system is inside the blue box. A) Short-Range Box, B) Long-Range Box. Nitrogen atoms are represented in transparent green, Carbon in transparent black and Hydrogen in transparent gray, Sodium ions in cyan and water molecules were removed to improve visualization.}
 	\label{Fig:aa3}
+  \end{center}
+\end{figure}
+
+\begin{figure}[H]
+  \begin{center}
+	\includegraphics[width=1 \textwidth]{./graphs/rdfaa3}
+	\caption{Radial distribution function representing silica phase in the DMDDn + Silica system}
+	\label{Fig:rdfAA3}
   \end{center}
 \end{figure}
 
@@ -606,8 +631,6 @@ A major issue expected when dealing with charged systems was during the coarse-g
 Now turning to the analysis of potentials obtained for Long-Range systems, Figure (\ref{Fig:NNCha}) reveals interesting features regarding the interaction with charged coarse-grain beads. The two different types of polar heads of the molecule show the 3 possibilities for interactions: neutral-neutral, charged-neutral and charged-charged. Both non-charged interactions have the peculiarity of presenting regions with negative potential where there are predominant regions of low energy that maintain the distance between beads within a specific range as like a customized Lennard-Jones potential. Contrastingly, the interaction between charged beads show a high energy potential with mostly repulsive forces as the Ni-Ni incorporated potential shows, which is an expected behaviour for electrostatic forces. When considering electrostatic forces separated from the others, it is expected to see a  potential similar to the neutral heads where the Van der Waals forces are predominant over solvent interaction forces. But instead, the graph shows new scenario where the potential remains with high energy and mostly repulsive forces and in addition it is possible to observe also lower energy pits in almost the same region as the Nn-Nn pits, indicating that the beads have a preferred structure even with high energy.
 
 
-
-
 \begin{figure}[H]
   \begin{center}
 	\includegraphics[width=1 \textwidth]{./graphs/NNCha}
@@ -616,21 +639,60 @@ Now turning to the analysis of potentials obtained for Long-Range systems, Figur
   \end{center}
 \end{figure}
 
-The reasons for this phenomenon can possible be explained by the forces originated from solvent interaction. The sources can be related to polarization effects that were intensified by the presence of charges, since the solvent will hydrate the charged polar head. This hydration probably is the major responsible for the increased repulsion between heads. The same effect is present in the counter-ion potentials where repulsion forces are also  Another option is possible related to dielectric permittivity adopted for the coarse-graining experiments because de adoption of implicit solvent requires the consideration of a relative permittivity, but there is no guarantee  that the experimental permittivity for water is suitable for coarse-graining techniques and therefore this point should be analysed more deeply.  As it is possible to see in in Figure (\ref{Fig:NNCha}),the sum of the electrostatic potential calculated assuming $\varepsilon = 78$ and the "charged" potential (green line) originates the blue line which theoretically should be the same as the integrated potential (red line), however even though they have almost the same shape the blue line seems to be shifted to a slightly higher energy state.
+The reasons for this phenomenon can possible be explained by the forces originated from solvent interaction. The sources can be related to polarization effects that were intensified by the presence of charges, since the solvent hydrate the charged polar head in the reference system as shown in Figure (\ref{Fig:polaris}). This hydration probably is the major responsible for the increased repulsion between heads. The same effect is present in the counter-ion potentials where repulsion forces are also  Another option is possible related to dielectric permittivity adopted for the coarse-graining experiments because de adoption of implicit solvent requires the consideration of a relative permittivity, but there is no guarantee  that the experimental permittivity for water is suitable for coarse-graining techniques and therefore this point should be analysed more deeply.  As it is possible to see in in Figure (\ref{Fig:NNCha}),the sum of the electrostatic potential calculated assuming $\varepsilon = 78$ and the "charged" potential (green line) originates the blue line which theoretically should be the same as the integrated potential (red line), however even though they have almost the same shape the blue line seems to be shifted to a slightly higher energy state.
+
+\begin{figure}[H]
+  \begin{center}
+	\includegraphics[width=1 \textwidth]{./graphs/polaris}
+	\caption{Radial distribution function representing the polarization effect in the ionic N head. Notice that the distance was measured from the center of mass of each water molecule.}
+	\label{Fig:polaris}
+  \end{center}
+\end{figure}
 
  \label{sec:rescutoff}
 Next, once the potentials were exported to GROMACS, the initial concern was which cut-off range and type of electrostatic parameters should be used for this coarse-grain model. For this a 1000 DMDDs molecules system was simulated using the most refined potential set from the long-range model. The parameters evaluated were first which type of potential should be used: Plain Cut-off or PME electrostatics, and the second test was to determine to what extent the the cut-off range affects the results. As determined during MagiC process, the electrostatic potential portion removed from the potential curve was set to be a $15 \ nm$ cut-off range, thus this value should be the optimal value to use in GROMACS simulations. Figure (\ref{Fig:b1000}) reveals that when this cut-off range is used with Plain Cut-off electrostatic type it seems that the self assembly structure resulted in an artifact, since there is too much apolar parts exposed to the implicit solvent. Apparently, the molecules are attempting to replicate the atomistic reference rather than organizing in a real structure where the apolar part is as less as possible exposed to the solvent. Nevertheless, when the PME electrostatic type was used with the same cut-off the layer self assembled in o much more physically meaningful structure. The structure formed were two semi-planes with infinite periodicity in one direction, moreover it seems to change the orientation of some polar heads to reduce the contact with the solvent at the exposed edges of the plane. Therefore, this second structure seem to be far more reasonable and probably is the best parameters to use when doing GROMACS simulations. When he Cut-off range was increase to $20 \ nm$ it is possble to identify again an artifact-like structure, however now the prefered organization was to form a stack of circular layers, tending to organize in a sphere. This behaviour may be a result of the influence from forces that should not be present and then the molecules are trying to maintain a compact structure around a center of mass. For the integrated potential, the electrostatic cut-off and type did not made any difference since there were no charges. However as it can be seen in Figure (\ref{Fig:b1000}), even though the layer formed is very similar to the ideal format it is possible to observe that the polar heads are not organizing in a suitable configuration, tending to agglomerate independently of the type and in some areas there is no distinction between charged heads and neutral heads. This fact is a good indicative that electrostatic forces should be treated separately from all other types, since it may generate very erroneous results.
+
 \begin{figure}[H]
   \begin{center}
 	\includegraphics[width=1 \textwidth]{./images/boxes1000}
-	\caption{Work in Progress}
+	\caption{Snapshot of simulation boxes with 1000 DMDDs coarse-grain model for multiple cases. Each case represent the input parameter described in previous paragraphs. The simulation time was about 100 ns or when the structure stabilized in a certain configuration.}
 	\label{Fig:b1000}
   \end{center}
 \end{figure}
  
 \subsection{Silica-Surfactant interaction}
 
+Finally, after analysing multiple situations where there were not any silica components, the stage was set to introduce the concept of silica-surfactant interactions. Based on the methodology applied for the previous systems, a coarse-grain model for orthosillicic acid was developed. As descried previously the OSAi precursor was considered as being a single bead thus the silica phase was composed by two bead types: this silica bead and the Sodium counter-ion. The DMDDn surfactant model remained the same, and it was expected that the final potential obtained after MagiC process didn't change with the addition of the silica precursor. The forces derived from the interaction with silica should come exclusively from the potential generated for the pairwise interaction between the bead types that constitute the DMDDn model and the silica phase beads. That is because neither the silica or the Sodium are implicit components of the coarse-grain system, therefore their presence should not affect the interaction potential between other bead types since the potential is an intrinsic property of each two bead types and should change only with thermodynamic changes on the system such as temperature or concentration. Nevertheless, as it is possible to see in Figure (\ref{Fig:SiPots}) that compares the potential of Pure DMDDn in water and with presence of silica, that the presence of silica influenced upon the shape of the curves, in which the Silica long-range potential seemed to considerably differ from both short-range potentials by showing wider potential pits indicating more flexibility to the coarse-grain model of the surfactant. The apolar interaction was the one with the most significant difference, this is possibly related to the addition of silica, since in the atomistic simulations it is possible to observe OSAi in contact with the apolar part. Although, all curves show a different format which result in a different self assembly structure, it is clear that energy related to these interactions are almost the same. 
+
+\begin{figure}[H]
+  \begin{center}
+	\includegraphics[width=1 \textwidth]{./graphs/Sipotsinter}
+	\includegraphics[width=.66 \textwidth]{./graphs/Sipotsintra}
+	\caption{Comparison between potential curves for systems with and without silica. The three top potentials are representing intermolecular interactions, the two bottom graphs represent intramolecular interactions. Notice that the curve of the angular potential for C-C short-range with silica present a strange behaviour where it goes to "infinity" at about 150 degress. This curve was softened before serving as input for the long-range potential since it is a certainly a glitch caused by MagiC}
+	\label{Fig:SiPots}
+  \end{center}
+\end{figure} 
+
+   When it comes to the efficiency of the  model in reproducing the expected results, as presented in Figure (\ref{Fig:Sibox}), it is a reality that the final structures do not reflect the one that was predicted. This could be related to several factors, such as the quality of the reference system, the coarse-grain model adopted or even the methodology adopted itself. First of all, due to the impossibility of development  of a long-range potential set for Pure DMDDn system, this project lack of comparison basis. As seen in previous cases, the long-range potentials seem to change when compared to the short-range potential even though they derive for them. Hence, this indicates that some effort need to be applied in this case by creating intermediate reference system for the Pure DMDDn model similarly to the ones used as long-range in the Charged systems cases from previous section and consequently it will be possible to conclude if the silica is really affecting the surfactant model. Secondly, another observable factor is that the silica interactions are probably too strong forming very rigid crystals that  seldom will present much flexibility to fit the surfactant layers. This fact is easily proven when comparing the potentials for Silica and Sodium interactions with all other potentials, because in these interactions not only the energies are elevated but also the forces resultant from the sharp pits and peaks in the potentials make the structure formed to be rigid within a certain region as shown in the figures include in Appendix (see Section \ref{sec:appendix}).
+   
+   \begin{figure}[H]
+  \begin{center}
+	\includegraphics[width=.9 \textwidth]{./images/sibox}
+	\caption{Snapshot of simulation boxes using DMDDn + Silica model with 1000DMDDn : 2000Si : 2000Na (Right) and 3000DMDDn : 6000Si : 6000Na (Left). In each case periodic replicas are used to improve the visualization oh the structure formed in each phase. The simulation time was about 100 ns for the smaller box and about 300 ns for the bigger box}
+	\label{Fig:Sibox}
+  \end{center}
+\end{figure} 
+  
+   As a final consideration regarding the model adopted for silica precursor, it is important to highlight that these problems may be related to the excessive simplification of the system. Since the silica atomistic model is not a symmetric molecule, it contains a certain polarity related to it which would result in a preferred orientation when interaction with other charged molecules. Thus, by considering it as a single bead it will loose this polarization effect, fact that is probably affecting the representation of the silica as a coarse-grain model.
+
 \section{Conclusion} 
+
+In this project, several techniques for improving coarse-graining efficiency when using MagiC Software package were developed and applied in multiple kinds of reference systems. Moreover, a simplified model for DMDD surfactant was created with the intention of easing the comprehension of the interaction potentials between the components of the system. The use of different types of DMDD surfactant not only enabled the understanding of how to include multiple molecular types in MagiC methodology, but also provided important information regarding how charged elements behave  when coarse-grained. The main objective was to obtain a reliable model for silica-surfactant systems, however even though this case was recreated by following the same systematic method used in all previous models, the final result obtained did not seem to reproduce a realistic behaviour.
+
+During the discussion and analysis section, it was was possible to observe that in some cases the coarse-grain model generated by MagiC presented some unrealistic results due to lack of flexibility. Consequently, a possible conclusion is that potentials were not generated to replicate the behaviour of the molecule itself, but instead they were just forcing the model to behave as similar as possible to the reference system. This theory is also supported by the fact that usually the short-range potentials are not similar to the long-range ones, even though the long-range was created based on the short-range. Therefore, a possible solution is to find a systematic methodology to make the potentials to fit multiple reference systems at the same time. When all RDFs reach an acceptable deviation, specially when it comes to the positioning of the peaks, the final potentials obtained will be certainly reducing the bias generated when fitting exactly an to specific reference RDF.
+
+In summary, this project provided useful tools to improve the inversion process by reducing not only the time consumed to obtain a suitable model but also increasing the reliability of the model generated. Furthermore, it provides reasonable understanding of coarse-grain charged systems by showing what to expect and which are the appropriate parameters to work with. Then finally, presented an initial step for developing a complete and reliable silica-surfactant system as well proposing ways in which this model could be improved.
+
 \section{Nomenclature} 
    \begin{tabulary}{1.0\textwidth}{LCL}
    $k_B$ & & Boltzmann's Constant\\
@@ -643,73 +705,258 @@ Next, once the potentials were exported to GROMACS, the initial concern was whic
 \section{Appendix}
 \label{sec:appendix}
 \setcounter{page}{1}
-%\begin{equation}
-%E_c=\frac{1}{2}mv^2
-%\label{eqn:bua}
-%\end{equation}
-%
-%\begin{table*}[ht!] 
-%  \centering
-%\begin{threeparttable}
-%
-%  \caption{Table generated by Excel2LaTeX from sheet 'Sheet1'}
-%
-%    \begin{tabular}{rrrrrr}
-%    \toprule
-%    Model & Depth & Width & Angle & Factor 1 & Factor 2 \\
-%	& (mm) & (mm) & (°)  &  &  \\
-%    \midrule
-%    111   & 1,00  & 1,50  & 10\tnote{a}   & 357.921 & 532.289 \\
-%    112   & 1,00  & 1,50  & 15   & 382.379 & 567.234 \\
-%    113   & 1,00  & 1,50  & 20   & 383.863 & 569.600 \\
-%    121   & 1,00  & 2,00  & 10   & 398.199 & 590.473 \\
-%    122   & 1,00  & 2,00  & 15   & 486.306 & 710.483 \\
-%    123   & 1,00  & 2,00  & 20   & 430.330 & 636.471 \\
-%    131   & 1,00  & 2,50  & 10   & 441.735 & 654.499 \\
-%    132   & 1,00  & 2,50  & 15   & 460.925 & 681.645 \\
-%    133   & 1,00  & 2,50  & 20   & 469.115 & 693.700 \\
-%    211   & 1,25  & 1,50  & 10   & 374.784 & 557.029 \\
-%    212   & 1,25  & 1,50  & 15   & 399.053\tnote{b} & 591.402 \\
-%    213   & 1,25  & 1,50  & 20   & 411.377 & 609.042 \\
-%    221   & 1,25  & 2,00  & 10   & 415.050 & 615.336 \\
-%    222   & 1,25  & 2,00  & 15   & 430.991 & 638.237 \\
-%    223   & 1,25  & 2,00  & 20   & 455.857 & 673.613 \\
-%    231   & 1,25  & 2,50  & 10   & 472.885 & 698.958 \\
-%    232   & 1,25  & 2,50  & 15   & 484.567 & 715.341 \\
-%    233   & 1,25  & 2,50  & 20  & 497.320 & 733.923 \\
-%    311   & 1,50  & 1,50  & 10   & 385.110 & 572.665 \\
-%    312   & 1,50  & 1,50  & 15   & 406.144 & 602.130 \\
-%    313   & 1,50  & 1,50  & 20   & 480.613 & 706.960 \\
-%    321   & 1,50  & 2,00  & 10   & 490.910 & 722.194 \\
-%    322   & 1,50  & 2,00  & 15   & 513.846 & 754.804 \\
-%    323   & 1,50  & 2,00  & 20   & 529.291 & 777.175 \\
-%    331   & 1,50  & 2,50  & 10   & 542.184 & 796.618 \\
-%    332   & 1,50  & 2,50  & 15   & 510.958 & 753.298 \\
-%    333   & 1,50  & 2,50  & 20   & 527.253 & 776.981 \\
-%         \midrule
-%          &       &       & Sum: & 12.138.966 & 17.932.100 \\
-%    \bottomrule
-%    \end{tabular}%
-%    \begin{tablenotes}
-%    	\item[a] This should be cited with a \citeA{magic}
-%    	\item[b] And this is another note
-%    \end{tablenotes}
-%  \label{tab:addlabel}%
-%\end{threeparttable} 
-%\end{table*}
-%
-%\begin{figure}[ht!]
-%  \begin{center}
-%	\includegraphics[width=0.3 \textwidth]{./images/wip}
-%	\caption{Work in Progress}
-%	\label{Fig:Boxplot}
-%  \end{center}
-%\end{figure}
-%
-%\textbf{Model 1 description files}
-%
-%\textbf{CGTraj input:}
-%\begin{lstlisting}[frame=single]
-% &TRAJ
-%\end{lstlisting}
+
+Potentials For Charged systems:
+\begin{figure}[H]
+  \begin{center}
+	\includegraphics[width=0.8 \textwidth]{./graphs/PtsChargedSys0}
+  \end{center}
+\end{figure}
+
+\begin{figure}[H]
+  \begin{center}
+	\includegraphics[width=0.8 \textwidth]{./graphs/PtsChargedSys1}
+  \end{center}
+\end{figure}
+
+\begin{figure}[H]
+  \begin{center}
+	\includegraphics[width=0.8 \textwidth]{./graphs/PtsChargedSys2}
+  \end{center}
+\end{figure}
+
+\begin{figure}[H]
+  \begin{center}
+	\includegraphics[width=0.8 \textwidth]{./graphs/PtsChargedSys3}
+  \end{center}
+\end{figure}
+
+\begin{figure}[H]
+  \begin{center}
+	\includegraphics[width=0.8 \textwidth]{./graphs/PtsChargedSys4}
+  \end{center}
+\end{figure}
+
+\begin{figure}[H]
+  \begin{center}
+	\includegraphics[width=0.8 \textwidth]{./graphs/PtsChargedSys5}
+  \end{center}
+\end{figure}
+
+\begin{figure}[H]
+  \begin{center}
+	\includegraphics[width=0.8 \textwidth]{./graphs/PtsChargedSys6}
+  \end{center}
+\end{figure}
+
+\begin{figure}[H]
+  \begin{center}
+	\includegraphics[width=0.8 \textwidth]{./graphs/PtsChargedSys7}
+  \end{center}
+\end{figure}
+
+\begin{figure}[H]
+  \begin{center}
+	\includegraphics[width=0.8 \textwidth]{./graphs/PtsChargedSys8}
+  \end{center}
+\end{figure}
+
+\begin{figure}[H]
+  \begin{center}
+	\includegraphics[width=0.8 \textwidth]{./graphs/PtsChargedSys9}
+  \end{center}
+\end{figure}
+
+\begin{figure}[H]
+  \begin{center}
+	\includegraphics[width=0.8 \textwidth]{./graphs/PtsChargedSys10}
+  \end{center}
+\end{figure}
+
+\begin{figure}[H]
+  \begin{center}
+	\includegraphics[width=0.8 \textwidth]{./graphs/PtsChargedSys11}
+  \end{center}
+\end{figure}
+
+\begin{figure}[H]
+  \begin{center}
+	\includegraphics[width=0.8 \textwidth]{./graphs/PtsChargedSys12}
+  \end{center}
+\end{figure}
+
+Potentials For DMDDn + Silica systems:
+\begin{figure}[H]
+  \begin{center}
+	\includegraphics[width=1 \textwidth]{./graphs/Sipots1}
+  \end{center}
+\end{figure}
+\begin{figure}[H]
+  \begin{center}
+	\includegraphics[width=1 \textwidth]{./graphs/Sipots2}
+  \end{center}
+\end{figure}
+\begin{figure}[H]
+  \begin{center}
+	\includegraphics[width=1 \textwidth]{./graphs/Sipots3}
+  \end{center}
+\end{figure}
+\begin{figure}[H]
+  \begin{center}
+	\includegraphics[width=1 \textwidth]{./graphs/Sipots4}
+  \end{center}
+\end{figure}
+
+
+\textbf{Exemple of a multi-component Model description files}
+
+\textbf{CGTraj input:}
+\begin{lstlisting}[frame=single]
+  &TRAJ
+ NFORM='PDBT',
+ FNAME='dnsi100.pdb',
+ PATHDB='./',
+ NTYPES=4,
+ NSPEC=100,200,520,200,
+ NAMOL='dmdd','osai','tip4p','na'
+ NFBEG=1,
+ NFEND=1,
+ ISTEP=1,
+ IPRINT=7,
+ &END
+ BeadMapping
+ CGTrajectoryOutputFile:cgtrajM3.xmol
+  CGMolecularType:DMDD
+    ParentType: dmdd
+    Ni:12:1,2,3,4,5,6,7,8,9,10,11,12
+    Cn:18:13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30
+    Nn:12:31,32,33,34,35,36,37,38,39,40,41,42
+  EndCGMolecularType 
+  CGMolecularType:OSAI
+    ParentType: osai
+    Si:8:1,2,3,4,5,6,7,8
+  EndCGMolecularType
+  CGMolecularType:tip4p
+# No beads assigned to this type, so the water will be excluded
+  EndCGMolecularType 
+  CGMolecularType:NA
+    ParentType: na
+    Na:1:1
+  EndCGMolecularType
+EndBeadMapping
+EndBeadMapping
+\end{lstlisting}
+
+\textbf{rdf-2.0 input:}
+\begin{lstlisting}[frame=single]
+ &TRAJ
+ NFORM='XMOL'
+ FNAME='cgtrajM3'
+ PATHDB='.'
+ NTYPES=3
+ NAMOL='dmdd','osai','na',
+ NSPEC=100,200,200,
+ NFBEG=1,
+ NFEND=1,
+ ISTEP=1,
+ IPRINT=7
+ &END
+ &RDFIN
+ FOUTRDF='M3dmdd',
+ RDFCUT=21.,
+ RMI=0.0,
+ RMAX=10.,
+ NRDF=10,
+ NRDFI=1,
+ NADF=1,
+ NATOMTYPES=4,
+ DELTAR=0.1,
+ DELTARI=0.02,
+ DELTAPHI=1.0,
+ &END
+# Different CG-type names 
+N:Ni Nn
+C:Cn
+Si:Si
+Na:Na
+#  List of Intermolecular RDFs
+N--N
+& 3
+  1 1
+  1 3
+  3 3
+N--C
+& 2
+ 1 2
+ 3 2
+N--Si
+& 2
+ 1 4
+ 3 4
+N--Na
+& 2
+ 1 5
+ 3 5
+C--C
+& 1
+  2 2
+C--Si
+& 1
+  2 4
+C--Na
+& 1
+  2 5
+Si--Si
+& 1
+  4 4
+Si--Na
+& 1
+  4 5
+Na--Na
+& 1
+  5 5
+#  List of Intramolecular RDFs
+N--C 1
+& 2
+  1 2
+  3 2
+#  List of Intramolecular ADFs
+N--N 1
+  1 3 2
+\end{lstlisting}
+
+\textbf{Example of GROMACS input parameters for reproduction tests}
+
+\begin{lstlisting}[frame=single]
+;cpp                 =  /usr/bin/cpp
+constraints         =  none
+integrator          =  sd
+dt                  =  0.02   ; ps ! 30 fs
+nsteps              =  5000000; 1 us 
+tau_t 		    =  1.0 ;! ps
+ref_t		    =  298.0 ;! K
+tc_grps		    =  System
+comm_mode	    =  Linear ;! Remove COM move and rotation around
+nstcomm		    =  1000
+nstlist             =  10 ;! Frequency to update neighbor list
+nstxout		    =  2000  ;! Frequency to write output coord
+nstvout		    =  10000 ;! Frequency to write velocities 
+nstfout		    =  10000  ;! Frequency to write forces
+nstenergy	    =  2000  ;! Frequency to write energy
+ns_type             =  grid ;! Way of creating neighbor list
+pbc		    =  xyz
+rlist               =  1.5 ;! Cutoff distance for short-range neighbor list
+coulombtype         =  pme ; rcoulomb=rlist
+fourierspacing	    =  0.35 
+pme_order	    =  5
+rcoulomb            =  1.5 ;! Real-space electrostatic cutoff
+vdwtype		    =  User
+rvdw                =  2.0   ; Same as R_cutoff in MDynamix
+rlistlong 	    = 2.0
+;dispcorr 	    =  Ener
+energygrps           =  Ni Cn Nn Br 
+energygrp_table     =  Ni Ni Ni Cn Ni Nn Ni Br Cn Cn Cn Nn Cn Br Nn Nn Nn Br Br Br
+epsilon_r           = 78 ; ! relative dielectric constant
+table-extension     = 0.5
+\end{lstlisting}
 \end{document}

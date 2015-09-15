@@ -106,6 +106,30 @@ Bussi, G.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Crescenzo%
+}{%
+Crescenzo%
+}{%
+{\protect \APACyear {2015}}%
+}]{%
+myproj}
+\APACinsertmetastar {%
+myproj}%
+\begin{APACrefauthors}%
+Crescenzo, A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2015}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Introduction to Computer-aided Design of Bio-inspired
+  Nanoporous Silica Materials} {Introduction to computer-aided design of
+  bio-inspired nanoporous silica materials}.{\BBCQ}
+\newblock
+
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Darden%
 , York%
 \BCBL {}\ \BBA {} Pedersen%
